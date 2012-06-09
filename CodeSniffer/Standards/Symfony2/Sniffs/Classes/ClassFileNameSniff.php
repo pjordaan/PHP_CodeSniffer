@@ -58,7 +58,7 @@ class Symfony2_Sniffs_Classes_ClassFileNameSniff implements PHP_CodeSniffer_Snif
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
-        $fileName = (pathinfo((string) $phpcsFile->getFilename(), PATHINFO_FILENAME));
+        $fileName = pathinfo((string) $phpcsFile->getFilename(), PATHINFO_FILENAME);
         $tokens   = $phpcsFile->getTokens();
         $decName  = $phpcsFile->findNext(T_STRING, $stackPtr);
         $className= (string) ($tokens[$decName]['content']);
@@ -69,7 +69,7 @@ class Symfony2_Sniffs_Classes_ClassFileNameSniff implements PHP_CodeSniffer_Snif
                       $className,
                       $fileName,
                      );
-            $phpcsFile->addError($error, $stackPtr, 'NoMatch', $data);
+            //$phpcsFile->addError($error, $stackPtr, 'NoMatch', $data);
         }
 
     }//end process()

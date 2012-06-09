@@ -109,6 +109,9 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="PSR2">
+    </rule>
+
 
     <!-- Import Zend coding standard (which in turn imports PEAR) -->
     <rule ref="Zend">
@@ -155,4 +158,7 @@
         <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
     </rule>
 
+    <rule ref="PSR2.Sniffs.Files.EndFileWhitespace">
+        <severity>0</severity>
+    </rule>
 </ruleset>
