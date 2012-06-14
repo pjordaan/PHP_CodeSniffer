@@ -109,6 +109,10 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing.Before">
+        <severity>0</severity>
+    </rule>
+
     <rule ref="PSR2">
     </rule>
 
