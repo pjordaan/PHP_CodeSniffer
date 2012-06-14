@@ -72,17 +72,13 @@
         <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
         <exclude name="Squiz.Commenting.FunctionComment"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment"/>
+        <exclude name="Squiz.Functions.FunctionDeclaration"/>
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
         <exclude name="PEAR.Functions.FunctionDeclaration"/>
         <exclude name="PEAR.Formatting.MultiLineAssignment"/>
     </rule>
-    <rule ref="Symfony2.Functions.FunctionDeclaration.NewlineBeforeOpenBrace">
-        <severity>0</severity>
-    </rule>
 
-    <rule ref="Symfony2.Functions.FunctionDeclaration.Indent">
-        <severity>0</severity>
-    </rule>
-    <rule ref="PEAR.Formatting.MultiLineAssignment.Indent">
+    <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NotSingleLine">
         <severity>0</severity>
     </rule>
 
@@ -170,7 +166,7 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="PEAR.Functions.FunctionDeclaration.Indent">
+    <rule ref="PEAR.Formatting.MultiLineAssignment.Indent">
         <severity>0</severity>
     </rule>
 
@@ -184,6 +180,14 @@
 
     <rule ref="Symfony2.Commenting.ClassComment.SpacingBeforeTags">
         <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
+    </rule>
+
+    <rule ref="Symfony2.Functions.FunctionDeclaration.NewlineBeforeOpenBrace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Symfony2.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace">
+        <severity>0</severity>
     </rule>
 
     <rule ref="PSR2.Files.EndFileWhitespace.NotFound">
