@@ -71,9 +71,14 @@
         <exclude name="Squiz.PHP.DisallowInlineIf"/>
         <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
         <exclude name="Squiz.Commenting.FunctionComment"/>
+        <exclude name="Squiz.PHP.DisallowComparisonAssignment"/>
     </rule>
 
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.OneParamPerLine">
         <severity>0</severity>
     </rule>
 
@@ -113,9 +118,12 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="PSR2">
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma">
+        <severity>0</severity>
     </rule>
 
+    <rule ref="PSR2">
+    </rule>
 
     <!-- Import Zend coding standard (which in turn imports PEAR) -->
     <rule ref="Zend">
@@ -147,6 +155,10 @@
     </rule>
 
     <rule ref="PEAR.Commenting.FunctionComment.ParameterCommentsNotAligned">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Functions.FunctionDeclaration.Indent">
         <severity>0</severity>
     </rule>
 
