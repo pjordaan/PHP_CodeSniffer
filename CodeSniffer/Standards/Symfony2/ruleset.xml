@@ -72,6 +72,18 @@
         <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
         <exclude name="Squiz.Commenting.FunctionComment"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment"/>
+        <exclude name="PEAR.Functions.FunctionDeclaration"/>
+        <exclude name="PEAR.Formatting.MultiLineAssignment"/>
+    </rule>
+    <rule ref="Symfony2.Functions.FunctionDeclaration.NewlineBeforeOpenBrace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Symfony2.Functions.FunctionDeclaration.Indent">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Formatting.MultiLineAssignment.Indent">
+        <severity>0</severity>
     </rule>
 
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma">
