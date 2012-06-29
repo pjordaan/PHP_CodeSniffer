@@ -170,6 +170,10 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="PEAR.NamingConventions_ValidFunctionName.PrivateNoUnderscore">
+        <severity>0</severity>
+    </rule>
+
     <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
         <severity>0</severity>
     </rule>
