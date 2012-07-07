@@ -1,7 +1,6 @@
 <?php
-
 /**
- * Verifies that class members have scope modifiers.
+ * Verifies that interface members have no scope modifiers.
  *
  * @category  PHP
  * @package   PHP_CodeSniffer
@@ -12,14 +11,14 @@
  * @version   Release: 1.3.0
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Symfony2_Sniffs_Scope_MethodScopeSniff extends PHP_CodeSniffer_Standards_AbstractScopeSniff
+class Symfony2_Sniffs_Scope_InterfaceMethodScopeSniff extends PHP_CodeSniffer_Standards_AbstractScopeSniff
 {
     /**
      * Constructs a Symfony2_Sniffs_Scope_MethodScopeSniff.
      */
     public function __construct()
     {
-        parent::__construct(array(T_CLASS), array(T_FUNCTION));
+        parent::__construct(array(T_INTERFACE), array(T_FUNCTION));
 
     }//end __construct()
 
@@ -43,10 +42,10 @@ class Symfony2_Sniffs_Scope_MethodScopeSniff extends PHP_CodeSniffer_Standards_A
         }
 
         $modifier = $phpcsFile->findPrevious(PHP_CodeSniffer_Tokens::$scopeModifiers, $stackPtr);
-        if (($modifier === false) || ($tokens[$modifier]['line'] !== $tokens[$stackPtr]['line'])) {
-            $error = 'No scope modifier specified for function "%s"';
+        if ($modifier) {
+            $error = 'No scope modifier allowed for function "%s"';
             $data  = array($methodName);
-            $phpcsFile->addError($error, $stackPtr, 'Missing', $data);
+            $phpcsFile->addError($error, $stackPtr, 'Present', $data);
         }
 
     }//end processTokenWithinScope()

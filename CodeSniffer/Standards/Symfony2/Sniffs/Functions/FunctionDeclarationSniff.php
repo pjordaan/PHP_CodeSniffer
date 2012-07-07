@@ -128,7 +128,7 @@ class Symfony2_Sniffs_Functions_FunctionDeclarationSniff implements PHP_CodeSnif
                 if ($tokens[$i]['line'] === $tokens[$closeBracket]['line']) {
                     // Closing brace needs to be indented to the same level
                     // as the function.
-                    $expectedIndent = $functionIndent + 4;
+                    $expectedIndent = $functionIndent + 0;
                 } else {
                     $expectedIndent = ($functionIndent + 4);
                 }

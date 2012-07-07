@@ -55,8 +55,6 @@
 
         <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
 
-        <exclude name="PEAR.Formatting.MultiLineAssignment"/>
-
         <exclude name="Squiz.Classes.ClassFileName"/>
 
         <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
@@ -64,17 +62,22 @@
         <exclude name="Squiz.Operators.ComparisonOperatorUsage"/>
 
         <exclude name="Squiz.NamingConventions.ConstantCase"/>
-        <exclude name="Squiz.NamingConventions.ValidVariableName"/>
         <exclude name="Squiz.Strings.ConcatenationSpacing"/>
 
         <exclude name="Squiz.PHP.CommentedOutCode"/>
         <exclude name="Squiz.PHP.DisallowInlineIf"/>
-        <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
-        <exclude name="Squiz.Commenting.FunctionComment"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment"/>
-        <exclude name="Squiz.Functions.FunctionDeclaration"/>
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
+
+        <exclude name="Squiz.Commenting.FunctionComment"/>
+        <exclude name="Squiz.NamingConventions.ValidVariableName"/>
+        <exclude name="Squiz.NamingConventions.ValidFunctionName"/>
+
+        <exclude name="PEAR.Commenting.FunctionComment"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
         <exclude name="PEAR.Functions.FunctionDeclaration"/>
+        <exclude name="PEAR.Formatting.MultiLineAssignment"/>
         <exclude name="PEAR.Formatting.MultiLineAssignment"/>
     </rule>
 
@@ -106,10 +109,6 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">
-        <severity>0</severity>
-    </rule>
-
     <rule ref="Squiz.Commenting.LongConditionClosingComment.Missing">
         <severity>0</severity>
     </rule>
@@ -137,8 +136,6 @@
     <rule ref="Zend">
         <exclude name="Zend.Debug.CodeAnalyzer"/>
         <exclude name="Zend.NamingConventions.ValidVariableName"/>
-        <exclude name="Zend.Commenting.FunctionComment"/>
-        <exclude name="PEAR.Commenting.FunctionComment"/>
     </rule>
 
     <rule ref="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore">
@@ -154,31 +151,11 @@
     <rule ref="PEAR.Functions.FunctionCallSignature.CloseBracketLine">
         <severity>0</severity>
     </rule>
-    <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeTags">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.ParameterCommentsNotAligned">
-        <severity>0</severity>
-    </rule>
-
     <rule ref="PEAR.Formatting.MultiLineAssignment.Indent">
         <severity>0</severity>
     </rule>
 
-    <rule ref="PEAR.NamingConventions_ValidFunctionName.PrivateNoUnderscore">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="Symfony2.Commenting.FunctionComment.ParameterCommentsNotAligned">
+    <rule ref="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore">
         <severity>0</severity>
     </rule>
 
@@ -193,6 +170,11 @@
     <rule ref="Symfony2.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace">
         <severity>0</severity>
     </rule>
+
+    <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
+        <severity>0</severity>
+    </rule>
+
 
     <rule ref="PSR2.Files.EndFileWhitespace.NotFound">
         <severity>0</severity>
