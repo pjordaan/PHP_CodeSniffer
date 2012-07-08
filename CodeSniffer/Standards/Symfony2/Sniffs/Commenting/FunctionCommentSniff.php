@@ -270,7 +270,7 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer
         }
 
         if ($lastChar == '.') {
-            $error = 'Function comment short description must end with a full stop';
+            $error = 'Function comment short description must not end with a full stop';
             $phpcsFile->addError($error, ($commentStart + 1), 'ShortFullStop');
         }
 
@@ -544,7 +544,7 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer
 
                 $lastChar = $content[(strlen($content) - 1)];
                 if ($lastChar == '.') {
-                    $error = '@throws tag comment must end with a full stop';
+                    $error = '@throws tag comment must not end with a full stop';
                     $this->currentFile->addError($error, $errorPos, 'ThrowsNoFullStop');
                 }
             }
