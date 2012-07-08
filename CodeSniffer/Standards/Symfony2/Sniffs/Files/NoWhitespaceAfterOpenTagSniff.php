@@ -59,6 +59,11 @@ class Symfony2_Sniffs_Files_NoWhitespaceAfterOpenTagSniff implements PHP_CodeSni
             $data  = array($blankLines);
             $phpcsFile->addError($error, $stackPtr, 'Found', $data);
         }
+
+        if($tokens[$stackPtr]['code'] !== T_NAMESPACE) {
+            $error = 'Expected namespace at start of file';
+            $phpcsFile->addError($error, $stackPtr, 'Namespace');
+        }
     }
     //end process()
 

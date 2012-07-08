@@ -37,6 +37,7 @@
         <exclude name="Generic.Formatting.NoSpaceAfterCast"/>
         <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
         <exclude name="Generic.PHP.UpperCaseConstant"/>
+        <exclude name="Generic.PHP.ForbiddenFunctions"/>
         <exclude name="Generic.VersionControl.SubversionProperties"/>
     </rule>
 
@@ -72,6 +73,7 @@
         <exclude name="Squiz.Commenting.FunctionComment"/>
         <exclude name="Squiz.NamingConventions.ValidVariableName"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName"/>
+        <exclude name="Squiz.PHP.ForbiddenFunctions"/>
 
         <exclude name="PEAR.Commenting.FunctionComment"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName"/>
