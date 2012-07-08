@@ -41,6 +41,12 @@
         <exclude name="Generic.VersionControl.SubversionProperties"/>
     </rule>
 
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+
     <rule ref="Squiz">
         <exclude name="Squiz.Arrays.ArrayDeclaration"/>
         <exclude name="Squiz.Files.FileExtension"/>
