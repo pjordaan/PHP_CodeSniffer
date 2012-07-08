@@ -78,7 +78,6 @@
         <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
         <exclude name="PEAR.Functions.FunctionDeclaration"/>
         <exclude name="PEAR.Formatting.MultiLineAssignment"/>
-        <exclude name="PEAR.Formatting.MultiLineAssignment"/>
     </rule>
 
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NotSingleLine">
@@ -172,11 +171,6 @@
     </rule>
 
     <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
-        <severity>0</severity>
-    </rule>
-
-
-    <rule ref="PSR2.Files.EndFileWhitespace.NotFound">
         <severity>0</severity>
     </rule>
 </ruleset>
