@@ -690,7 +690,7 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer
                                           $pos,
                                          );
                                 $this->currentFile->addError($error, ($commentEnd + 2), 'TypeHintMissing', $data);
-                            } else if ($typeHint !== $suggestedTypeHint) {
+                            } else if ($typeHint !== $suggestedTypeHint && strpos($suggestedTypeHint, '[]') === false) {
                                 $error = 'Expected type hint "%s"; found "%s" for %s at position %s';
                                 $data  = array(
                                           $suggestedTypeHint,
