@@ -275,7 +275,7 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer
         }
 
         // Check for unknown/deprecated tags.
-        $this->processUnknownTags($commentStart, $commentEnd);
+        //$this->processUnknownTags($commentStart, $commentEnd);
 
         // The last content should be a newline and the content before
         // that should not be blank. If there is more blank space
