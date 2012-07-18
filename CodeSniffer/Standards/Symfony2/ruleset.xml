@@ -47,6 +47,10 @@
         </properties>
     </rule>
 
+    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine">
+        <severity>0</severity>
+    </rule>
+
     <rule ref="Squiz">
         <exclude name="Squiz.Arrays.ArrayDeclaration"/>
         <exclude name="Squiz.Files.FileExtension"/>
@@ -172,14 +176,6 @@
 
     <rule ref="Symfony2.Commenting.ClassComment.SpacingBeforeTags">
         <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
-    </rule>
-
-    <rule ref="Symfony2.Functions.FunctionDeclaration.NewlineBeforeOpenBrace">
-        <severity>0</severity>
-    </rule>
-
-    <rule ref="Symfony2.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace">
-        <severity>0</severity>
     </rule>
 
     <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
