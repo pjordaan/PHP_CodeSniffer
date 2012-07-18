@@ -139,6 +139,10 @@
     <rule ref="PSR2">
     </rule>
 
+    <rule ref="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">
+        <severity>0</severity>
+    </rule>
+
     <!-- Import Zend coding standard (which in turn imports PEAR) -->
     <rule ref="Zend">
         <exclude name="Zend.Debug.CodeAnalyzer"/>
