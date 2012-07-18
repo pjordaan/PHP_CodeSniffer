@@ -136,11 +136,11 @@
         <severity>0</severity>
     </rule>
 
-    <rule ref="PSR2">
+    <rule ref="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed">
+        <severity>0</severity>
     </rule>
 
-    <rule ref="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">
-        <severity>0</severity>
+    <rule ref="PSR2">
     </rule>
 
     <!-- Import Zend coding standard (which in turn imports PEAR) -->
