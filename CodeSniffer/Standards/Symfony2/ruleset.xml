@@ -181,4 +181,9 @@
     <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
         <severity>0</severity>
     </rule>
+
+    <rule ref="Symfony2.Files.NoWhitespaceAfterOpenTag.Namespace">
+        <severity>0</severity>
+    </rule>
+
 </ruleset>
