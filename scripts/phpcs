@@ -15,7 +15,7 @@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
 
-error_reporting(E_ALL | E_STRICT);
+error_reporting(0);
 
 // Optionally use PHP_Timer to print time/memory stats for the run.
 // Note that the reports are the ones who actually print the data
