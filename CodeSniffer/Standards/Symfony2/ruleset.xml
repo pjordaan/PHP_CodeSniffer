@@ -196,4 +196,8 @@
         <severity>0</severity>
     </rule>
 
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <severity>0</severity>
+    </rule>
+
 </ruleset>
