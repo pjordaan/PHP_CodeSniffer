@@ -39,6 +39,7 @@
         <exclude name="Generic.PHP.UpperCaseConstant"/>
         <exclude name="Generic.PHP.ForbiddenFunctions"/>
         <exclude name="Generic.VersionControl.SubversionProperties"/>
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
     </rule>
 
     <rule ref="Generic.Files.LineEndings">
