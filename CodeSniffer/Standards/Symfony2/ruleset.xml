@@ -40,6 +40,8 @@
         <exclude name="Generic.PHP.ForbiddenFunctions"/>
         <exclude name="Generic.VersionControl.SubversionProperties"/>
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+        <exclude name="Generic.Files.LowercasedFilename"/>
+        <exclude name="Generic.PHP.ClosingPHPTag"/>
     </rule>
 
     <rule ref="Generic.Files.LineEndings">
