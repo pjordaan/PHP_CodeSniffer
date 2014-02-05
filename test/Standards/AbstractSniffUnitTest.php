@@ -72,7 +72,7 @@ abstract class AbstractSniffUnitTest extends PHPUnit_Framework_TestCase
      * @return void
      * @throws PHPUnit_Framework_Error
      */
-    protected final function runTest()
+    public final function testSniff()
     {
         // Skip this test if we can't run in this environment.
         if ($this->shouldSkipTest() === true) {
@@ -86,17 +86,10 @@ abstract class AbstractSniffUnitTest extends PHPUnit_Framework_TestCase
         $standardName = substr($basename, 0, strpos($basename, '_'));
 
         // The code of the sniff we are testing.
-        $parts     = explode('_', $basename);
-        $sniffCode = $parts[0].'.'.$parts[2].'.'.$parts[3];
+        $sniffCode = str_replace('_', '.', $basename);
 
-        if (is_file(dirname(__FILE__).'/../../CodeSniffer.php') === true) {
-            // We have not been installed.
-            $standardsDir = realpath(dirname(__FILE__).'/../../CodeSniffer/Standards');
-            $testFileBase = $standardsDir.DIRECTORY_SEPARATOR.str_replace('_', DIRECTORY_SEPARATOR, $basename).'UnitTest.';
-        } else {
-            // The name of the dummy file we are testing.
-            $testFileBase = dirname(__FILE__).DIRECTORY_SEPARATOR.str_replace('_', DIRECTORY_SEPARATOR, $basename).'UnitTest.';
-        }
+        $testFileBase = realpath(__DIR__);
+        $testFileBase .= DIRECTORY_SEPARATOR.str_replace('_', DIRECTORY_SEPARATOR, $basename).'UnitTest.';
 
         // Get a list of all test files to check. These will have the same base
         // name but different extensions. We ignore the .php file as it is the class.
