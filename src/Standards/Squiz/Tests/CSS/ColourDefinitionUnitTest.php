@@ -65,4 +65,4 @@ class Squiz_Tests_CSS_ColourDefinitionUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

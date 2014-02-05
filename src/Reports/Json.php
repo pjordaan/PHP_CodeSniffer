@@ -111,4 +111,4 @@ class PHP_CodeSniffer_Reports_Json implements PHP_CodeSniffer_Report
 
 }//end class
 
-?>
+

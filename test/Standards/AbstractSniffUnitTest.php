@@ -353,4 +353,4 @@ abstract class AbstractSniffUnitTest extends PHPUnit_Framework_TestCase
 
 }//end class
 
-?>
+

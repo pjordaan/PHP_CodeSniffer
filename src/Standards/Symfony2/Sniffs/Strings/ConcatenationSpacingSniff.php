@@ -68,4 +68,4 @@ class Symfony2_Sniffs_Strings_ConcatenationSpacingSniff implements PHP_CodeSniff
 
 }//end class
 
-?>
+

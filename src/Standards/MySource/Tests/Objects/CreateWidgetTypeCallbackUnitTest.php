@@ -77,4 +77,4 @@ class MySource_Tests_Objects_CreateWidgetTypeCallbackUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

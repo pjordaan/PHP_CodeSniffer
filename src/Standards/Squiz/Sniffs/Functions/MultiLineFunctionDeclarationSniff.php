@@ -135,4 +135,4 @@ class Squiz_Sniffs_Functions_MultiLineFunctionDeclarationSniff extends PEAR_Snif
 
 }//end class
 
-?>
+

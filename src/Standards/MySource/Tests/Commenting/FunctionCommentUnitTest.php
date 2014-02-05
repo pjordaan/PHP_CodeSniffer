@@ -68,4 +68,4 @@ class MySource_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUni
 
 }//end class
 
-?>
+

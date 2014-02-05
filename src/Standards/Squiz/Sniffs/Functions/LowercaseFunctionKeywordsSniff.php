@@ -78,4 +78,4 @@ class Squiz_Sniffs_Functions_LowercaseFunctionKeywordsSniff implements PHP_CodeS
 
 }//end class
 
-?>
+

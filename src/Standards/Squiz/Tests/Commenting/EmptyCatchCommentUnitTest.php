@@ -71,4 +71,4 @@ class Squiz_Tests_Commenting_EmptyCatchCommentUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

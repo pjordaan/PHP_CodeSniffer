@@ -67,4 +67,4 @@ class PSR2_Tests_Methods_FunctionCallSignatureUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

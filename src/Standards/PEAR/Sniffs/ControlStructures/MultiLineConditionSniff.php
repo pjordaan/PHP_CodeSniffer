@@ -186,4 +186,4 @@ class PEAR_Sniffs_ControlStructures_MultiLineConditionSniff implements PHP_CodeS
 
 }//end class
 
-?>
+

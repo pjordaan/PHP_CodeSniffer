@@ -148,4 +148,4 @@ class Generic_Sniffs_Functions_CallTimePassByReferenceSniff implements PHP_CodeS
 
 }//end class
 
-?>
+

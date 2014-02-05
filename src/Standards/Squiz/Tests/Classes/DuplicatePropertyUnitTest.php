@@ -66,4 +66,4 @@ class Squiz_Tests_Classes_DuplicatePropertyUnitTest extends AbstractSniffUnitTes
 
 }//end class
 
-?>
+

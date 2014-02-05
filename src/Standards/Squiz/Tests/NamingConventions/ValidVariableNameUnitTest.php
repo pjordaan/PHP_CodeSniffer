@@ -92,4 +92,4 @@ class Squiz_Tests_NamingConventions_ValidVariableNameUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

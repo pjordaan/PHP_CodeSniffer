@@ -78,4 +78,4 @@ class PSR2_Tests_Files_EndFileNewlineUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

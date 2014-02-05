@@ -87,4 +87,4 @@ class Generic_Tests_Formatting_NoSpaceAfterCastUnitTest extends AbstractSniffUni
 
 }//end class
 
-?>
+

@@ -84,4 +84,4 @@ class PSR2_Tests_Classes_ClassDeclarationUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

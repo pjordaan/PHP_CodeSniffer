@@ -66,4 +66,4 @@ class Squiz_Tests_PHP_InnerFunctionsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

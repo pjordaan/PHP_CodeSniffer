@@ -68,4 +68,4 @@ class Squiz_Tests_Functions_FunctionDuplicateArgumentUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

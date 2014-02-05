@@ -71,4 +71,4 @@ class Squiz_Sniffs_NamingConventions_ValidFunctionNameSniff extends PEAR_Sniffs_
 
 }//end class
 
-?>
+

@@ -69,4 +69,4 @@ class Generic_Tests_Metrics_CyclomaticComplexityUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

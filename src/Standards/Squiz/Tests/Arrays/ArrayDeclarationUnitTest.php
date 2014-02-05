@@ -116,4 +116,4 @@ class Squiz_Tests_Arrays_ArrayDeclarationUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

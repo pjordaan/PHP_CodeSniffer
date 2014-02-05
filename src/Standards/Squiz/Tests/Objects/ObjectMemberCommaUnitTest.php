@@ -72,4 +72,4 @@ class Squiz_Tests_Objects_ObjectMemberCommaUnitTest extends AbstractSniffUnitTes
 
 }//end class
 
-?>
+

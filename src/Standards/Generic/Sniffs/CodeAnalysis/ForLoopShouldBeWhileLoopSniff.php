@@ -101,4 +101,4 @@ class Generic_Sniffs_CodeAnalysis_ForLoopShouldBeWhileLoopSniff implements PHP_C
 
 }//end class
 
-?>
+

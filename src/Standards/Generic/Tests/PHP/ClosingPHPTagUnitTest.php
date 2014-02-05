@@ -64,4 +64,4 @@ class Generic_Tests_PHP_ClosingPHPTagUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

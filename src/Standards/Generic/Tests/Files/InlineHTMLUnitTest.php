@@ -80,4 +80,4 @@ class Generic_Tests_Files_InlineHTMLUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

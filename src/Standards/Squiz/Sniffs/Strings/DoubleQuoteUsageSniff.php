@@ -133,4 +133,4 @@ class Squiz_Sniffs_Strings_DoubleQuoteUsageSniff implements PHP_CodeSniffer_Snif
 
 }//end class
 
-?>
+

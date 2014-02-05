@@ -65,4 +65,4 @@ class Squiz_Tests_CSS_ClassDefinitionNameSpacingUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

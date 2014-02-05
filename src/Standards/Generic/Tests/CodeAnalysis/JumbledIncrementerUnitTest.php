@@ -67,4 +67,3 @@ class Generic_Tests_CodeAnalysis_JumbledIncrementerUnitTest extends AbstractSnif
 
 }//end class
 
-?>

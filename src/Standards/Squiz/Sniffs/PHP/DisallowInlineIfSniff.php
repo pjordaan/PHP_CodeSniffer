@@ -71,4 +71,4 @@ class Squiz_Sniffs_PHP_DisallowInlineIfSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

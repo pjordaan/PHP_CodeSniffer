@@ -77,4 +77,4 @@ class Squiz_Tests_Classes_LowercaseClassKeywordsUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

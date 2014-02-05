@@ -74,4 +74,4 @@ class Squiz_Tests_Operators_IncrementDecrementUsageUnitTest extends AbstractSnif
 
 }//end class
 
-?>
+

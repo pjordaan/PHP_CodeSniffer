@@ -681,4 +681,4 @@ abstract class PHP_CodeSniffer_CommentParser_AbstractParser
 
 }//end class
 
-?>
+

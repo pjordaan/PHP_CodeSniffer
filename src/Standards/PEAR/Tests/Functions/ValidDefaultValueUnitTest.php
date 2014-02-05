@@ -71,4 +71,4 @@ class PEAR_Tests_Functions_ValidDefaultValueUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

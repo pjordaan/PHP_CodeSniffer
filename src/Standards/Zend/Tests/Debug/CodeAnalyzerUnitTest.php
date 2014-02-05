@@ -79,4 +79,4 @@ class Zend_Tests_Debug_CodeAnalyzerUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

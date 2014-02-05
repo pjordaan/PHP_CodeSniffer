@@ -80,4 +80,4 @@ class Squiz_Tests_WhiteSpace_LanguageConstructSpacingUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

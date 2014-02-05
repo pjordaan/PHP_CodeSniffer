@@ -83,4 +83,4 @@ class Squiz_Sniffs_ControlStructures_LowercaseDeclarationSniff implements PHP_Co
 
 }//end class
 
-?>
+

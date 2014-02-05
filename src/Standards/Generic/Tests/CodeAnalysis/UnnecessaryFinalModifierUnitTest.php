@@ -67,4 +67,3 @@ class Generic_Tests_CodeAnalysis_UnnecessaryFinalModifierUnitTest extends Abstra
 
 }//end class
 
-?>

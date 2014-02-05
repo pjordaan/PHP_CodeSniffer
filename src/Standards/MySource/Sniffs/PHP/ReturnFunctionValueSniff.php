@@ -73,4 +73,4 @@ class MySource_Sniffs_PHP_ReturnFunctionValueSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+

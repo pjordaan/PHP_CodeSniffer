@@ -103,4 +103,4 @@ class Generic_Tests_NamingConventions_CamelCapsFunctionNameUnitTest extends Abst
 
 }//end class
 
-?>
+

@@ -68,4 +68,4 @@ class Squiz_Tests_CSS_ClassDefinitionOpeningBraceSpaceUnitTest extends AbstractS
 
 }//end class
 
-?>
+

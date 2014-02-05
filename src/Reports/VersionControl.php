@@ -257,4 +257,4 @@ abstract class PHP_CodeSniffer_Reports_VersionControl implements PHP_CodeSniffer
 
 }//end class
 
-?>
+

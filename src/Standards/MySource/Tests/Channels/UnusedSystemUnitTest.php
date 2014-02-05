@@ -69,4 +69,4 @@ class MySource_Tests_Channels_UnusedSystemUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

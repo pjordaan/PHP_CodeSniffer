@@ -96,4 +96,4 @@ class Squiz_Tests_ControlStructures_ForLoopDeclarationUnitTest extends AbstractS
 
 }//end class
 
-?>
+

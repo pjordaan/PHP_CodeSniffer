@@ -112,4 +112,4 @@ class PSR2_Sniffs_Classes_PropertyDeclarationSniff extends PHP_CodeSniffer_Stand
 
 }//end class
 
-?>
+

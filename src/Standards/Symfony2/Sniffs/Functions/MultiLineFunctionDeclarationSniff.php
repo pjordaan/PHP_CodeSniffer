@@ -89,4 +89,4 @@ class Symfony2_Sniffs_Functions_MultiLineFunctionDeclarationSniff extends Symfon
 
 }//end class
 
-?>
+

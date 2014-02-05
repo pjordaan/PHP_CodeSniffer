@@ -71,4 +71,4 @@ class Squiz_Sniffs_PHP_DisallowBooleanStatementSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

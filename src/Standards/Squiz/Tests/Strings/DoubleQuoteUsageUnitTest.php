@@ -73,4 +73,4 @@ class Squiz_Tests_Strings_DoubleQuoteUsageUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -2177,4 +2177,4 @@ class PHP_CodeSniffer
 
 }//end class
 
-?>
+

@@ -80,4 +80,4 @@ class PEAR_Tests_WhiteSpace_ScopeIndentUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -230,4 +230,4 @@ class PEAR_Sniffs_Commenting_ClassCommentSniff extends PEAR_Sniffs_Commenting_Fi
 
 }//end class
 
-?>
+

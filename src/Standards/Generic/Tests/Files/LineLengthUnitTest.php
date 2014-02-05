@@ -75,4 +75,4 @@ class Generic_Tests_Files_LineLengthUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

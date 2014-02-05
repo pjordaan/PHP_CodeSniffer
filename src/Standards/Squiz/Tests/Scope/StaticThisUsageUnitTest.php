@@ -68,4 +68,4 @@ class Squiz_Tests_Scope_StaticThisUsageUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

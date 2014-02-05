@@ -69,4 +69,4 @@ class MySource_Tests_PHP_AjaxNullComparisonUnitTest extends AbstractSniffUnitTes
 
 }//end class
 
-?>
+

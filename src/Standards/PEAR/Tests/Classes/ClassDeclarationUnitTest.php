@@ -72,4 +72,4 @@ class PEAR_Tests_Classes_ClassDeclarationUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

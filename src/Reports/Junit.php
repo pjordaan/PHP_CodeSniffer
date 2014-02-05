@@ -143,5 +143,3 @@ class PHP_CodeSniffer_Reports_Junit implements PHP_CodeSniffer_Report
 
 
 }//end class
-
-?>

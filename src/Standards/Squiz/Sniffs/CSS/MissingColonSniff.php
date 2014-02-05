@@ -98,4 +98,4 @@ class Squiz_Sniffs_CSS_MissingColonSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

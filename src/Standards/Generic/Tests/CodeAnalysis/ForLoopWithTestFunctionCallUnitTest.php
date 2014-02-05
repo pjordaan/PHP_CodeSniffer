@@ -66,4 +66,3 @@ class Generic_Tests_CodeAnalysis_ForLoopWithTestFunctionCallUnitTest extends Abs
 
 }//end class
 
-?>

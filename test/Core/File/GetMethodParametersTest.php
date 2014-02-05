@@ -275,5 +275,5 @@ class Core_File_GetMethodParametersTest extends PHPUnit_Framework_TestCase
 /* testTypeHint */ function typeHint(foo $var1, bar $var2) {}
 // @codingStandardsIgnoreEnd
 
-?>
+
 

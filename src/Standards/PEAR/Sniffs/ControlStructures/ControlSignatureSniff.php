@@ -64,4 +64,4 @@ class PEAR_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSniffe
 
 }//end class
 
-?>
+

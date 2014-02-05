@@ -203,4 +203,4 @@ class Generic_Sniffs_VersionControl_SubversionPropertiesSniff implements PHP_Cod
 
 }//end class
 
-?>
+

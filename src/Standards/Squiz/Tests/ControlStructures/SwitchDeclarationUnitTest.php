@@ -105,4 +105,4 @@ class Squiz_Tests_ControlStructures_SwitchDeclarationUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

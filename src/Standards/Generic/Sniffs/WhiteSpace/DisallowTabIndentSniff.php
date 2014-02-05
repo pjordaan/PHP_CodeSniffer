@@ -83,4 +83,4 @@ class Generic_Sniffs_WhiteSpace_DisallowTabIndentSniff implements PHP_CodeSniffe
 
 }//end class
 
-?>
+

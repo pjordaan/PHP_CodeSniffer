@@ -66,4 +66,4 @@ class Zend_Tests_Files_ClosingTagUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

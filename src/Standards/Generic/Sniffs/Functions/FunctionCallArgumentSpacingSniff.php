@@ -140,4 +140,4 @@ class Generic_Sniffs_Functions_FunctionCallArgumentSpacingSniff implements PHP_C
 
 }//end class
 
-?>
+

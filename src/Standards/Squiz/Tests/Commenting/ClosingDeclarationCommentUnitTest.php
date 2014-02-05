@@ -74,4 +74,4 @@ class Squiz_Tests_Commenting_ClosingDeclarationCommentUnitTest extends AbstractS
 
 }//end class
 
-?>
+

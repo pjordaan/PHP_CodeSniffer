@@ -84,4 +84,4 @@ class Squiz_Sniffs_Operators_ValidLogicalOperatorsSniff implements PHP_CodeSniff
 
 }//end class
 
-?>
+

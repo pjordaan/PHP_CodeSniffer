@@ -77,4 +77,4 @@ class Squiz_Tests_Commenting_DocCommentAlignmentUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

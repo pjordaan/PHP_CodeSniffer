@@ -76,4 +76,4 @@ class Squiz_Tests_ControlStructures_LowercaseDeclarationUnitTest extends Abstrac
 
 }//end class
 
-?>
+

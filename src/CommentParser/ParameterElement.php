@@ -335,4 +335,4 @@ class PHP_CodeSniffer_CommentParser_ParameterElement extends PHP_CodeSniffer_Com
 
 }//end class
 
-?>
+

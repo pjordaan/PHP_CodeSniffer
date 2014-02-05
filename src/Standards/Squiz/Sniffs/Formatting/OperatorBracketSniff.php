@@ -251,4 +251,4 @@ class Squiz_Sniffs_Formatting_OperatorBracketSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+

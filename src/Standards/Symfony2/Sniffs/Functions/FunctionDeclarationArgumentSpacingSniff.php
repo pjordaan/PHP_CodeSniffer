@@ -250,4 +250,4 @@ class Symfony2_Sniffs_Functions_FunctionDeclarationArgumentSpacingSniff implemen
 
 }//end class
 
-?>
+

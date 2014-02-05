@@ -342,4 +342,4 @@ class Squiz_Sniffs_Commenting_VariableCommentSniff extends PHP_CodeSniffer_Stand
 
 
 }//end class
-?>
+

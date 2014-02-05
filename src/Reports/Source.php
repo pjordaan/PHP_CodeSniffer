@@ -232,4 +232,4 @@ class PHP_CodeSniffer_Reports_Source implements PHP_CodeSniffer_Report
 
 }//end class
 
-?>
+

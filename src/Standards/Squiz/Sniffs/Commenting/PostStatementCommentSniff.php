@@ -100,4 +100,4 @@ class Squiz_Sniffs_Commenting_PostStatementCommentSniff implements PHP_CodeSniff
 }//end class
 
 
-?>
+

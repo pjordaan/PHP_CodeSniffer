@@ -66,4 +66,3 @@ class Generic_Tests_CodeAnalysis_UselessOverridingMethodUnitTest extends Abstrac
 
 }//end class
 
-?>

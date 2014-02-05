@@ -301,4 +301,4 @@ class Generic_Sniffs_Formatting_MultipleStatementAlignmentSniff implements PHP_C
 
 }//end class
 
-?>
+

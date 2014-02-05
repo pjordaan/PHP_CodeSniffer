@@ -95,4 +95,4 @@ class Squiz_Sniffs_Objects_DisallowObjectStringIndexSniff implements PHP_CodeSni
 
 }//end class
 
-?>
+

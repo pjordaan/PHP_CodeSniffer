@@ -79,4 +79,4 @@ class Squiz_Tests_Functions_MultiLineFunctionDeclarationUnitTest extends Abstrac
 
 }//end class
 
-?>
+

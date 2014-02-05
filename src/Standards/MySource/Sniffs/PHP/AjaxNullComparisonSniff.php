@@ -110,4 +110,4 @@ class MySource_Sniffs_PHP_AjaxNullComparisonSniff implements PHP_CodeSniffer_Sni
 
 }//end class
 
-?>
+

@@ -67,4 +67,4 @@ class Generic_Tests_NamingConventions_ConstructorNameUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

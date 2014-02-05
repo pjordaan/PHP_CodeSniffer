@@ -77,4 +77,4 @@ class Squiz_Tests_Debug_JavaScriptLintUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

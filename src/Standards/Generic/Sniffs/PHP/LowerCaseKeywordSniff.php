@@ -134,4 +134,4 @@ class Generic_Sniffs_PHP_LowerCaseKeywordSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

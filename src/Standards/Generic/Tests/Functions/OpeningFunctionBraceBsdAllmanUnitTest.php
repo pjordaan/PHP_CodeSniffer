@@ -84,4 +84,4 @@ class Generic_Tests_Functions_OpeningFunctionBraceBsdAllmanUnitTest extends Abst
 
 }//end class
 
-?>
+

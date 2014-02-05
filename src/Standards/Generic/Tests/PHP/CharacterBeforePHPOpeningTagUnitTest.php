@@ -65,4 +65,4 @@ class Generic_Tests_PHP_CharacterBeforePHPOpeningTagUnitTest extends AbstractSni
 
 }//end class
 
-?>
+

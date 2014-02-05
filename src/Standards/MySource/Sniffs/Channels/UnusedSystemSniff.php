@@ -154,4 +154,4 @@ class MySource_Sniffs_Channels_UnusedSystemSniff implements PHP_CodeSniffer_Snif
 
 }//end class
 
-?>
+

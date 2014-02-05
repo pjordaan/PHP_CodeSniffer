@@ -70,4 +70,4 @@ class Squiz_Tests_Operators_ValidLogicalOperatorsUnitTest extends AbstractSniffU
 
 }//end class
 
-?>
+

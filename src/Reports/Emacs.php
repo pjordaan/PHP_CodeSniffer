@@ -105,4 +105,4 @@ class PHP_CodeSniffer_Reports_Emacs implements PHP_CodeSniffer_Report
 
 }//end class
 
-?>
+

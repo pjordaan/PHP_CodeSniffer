@@ -154,4 +154,4 @@ class Generic_Sniffs_NamingConventions_UpperCaseConstantNameSniff implements PHP
 
 }//end class
 
-?>
+

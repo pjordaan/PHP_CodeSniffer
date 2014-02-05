@@ -264,4 +264,4 @@ class PHP_CodeSniffer_DocGenerators_Text extends PHP_CodeSniffer_DocGenerators_G
 
 }//end class
 
-?>
+

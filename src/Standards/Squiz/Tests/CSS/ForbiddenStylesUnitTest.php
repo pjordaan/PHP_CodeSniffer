@@ -70,4 +70,4 @@ class Squiz_Tests_CSS_ForbiddenStylesUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

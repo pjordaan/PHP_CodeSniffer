@@ -85,4 +85,4 @@ class Squiz_Tests_Functions_FunctionDeclarationArgumentSpacingUnitTest extends A
 
 }//end class
 
-?>
+

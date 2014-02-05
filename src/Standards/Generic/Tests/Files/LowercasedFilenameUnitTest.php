@@ -62,4 +62,4 @@ class Generic_Tests_Files_LowercasedFilenameUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

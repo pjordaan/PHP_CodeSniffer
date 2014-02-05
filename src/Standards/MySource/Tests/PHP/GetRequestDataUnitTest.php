@@ -70,4 +70,4 @@ class MySource_Tests_PHP_GetRequestDataUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

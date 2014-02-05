@@ -84,4 +84,4 @@ class Squiz_Tests_Commenting_ClassCommentUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

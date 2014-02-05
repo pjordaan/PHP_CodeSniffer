@@ -487,4 +487,4 @@ class PEAR_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer_Sni
 
 }//end class
 
-?>
+

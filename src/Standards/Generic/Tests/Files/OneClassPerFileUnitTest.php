@@ -65,4 +65,4 @@ class Generic_Tests_Files_OneClassPerFileUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

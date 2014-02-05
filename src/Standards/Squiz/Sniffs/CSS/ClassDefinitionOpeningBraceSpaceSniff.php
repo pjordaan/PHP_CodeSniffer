@@ -115,4 +115,4 @@ class Squiz_Sniffs_CSS_ClassDefinitionOpeningBraceSpaceSniff implements PHP_Code
 
 }//end class
 
-?>
+

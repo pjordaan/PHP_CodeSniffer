@@ -66,4 +66,4 @@ class Squiz_Tests_CSS_LowercaseStyleDefinitionUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

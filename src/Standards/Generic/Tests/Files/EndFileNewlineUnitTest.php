@@ -77,4 +77,4 @@ class Generic_Tests_Files_EndFileNewlineUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

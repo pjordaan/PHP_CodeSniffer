@@ -67,4 +67,4 @@ class Squiz_Tests_Objects_ObjectInstantiationUnitTest extends AbstractSniffUnitT
 
 }//end class
 
-?>
+

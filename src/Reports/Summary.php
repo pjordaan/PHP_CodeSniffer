@@ -132,4 +132,4 @@ class PHP_CodeSniffer_Reports_Summary implements PHP_CodeSniffer_Report
 
 }//end class
 
-?>
+

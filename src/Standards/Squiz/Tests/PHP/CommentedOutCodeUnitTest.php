@@ -82,4 +82,4 @@ class Squiz_Tests_PHP_CommentedOutCodeUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

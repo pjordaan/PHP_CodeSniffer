@@ -198,4 +198,4 @@ abstract class PHP_CodeSniffer_Standards_AbstractScopeSniff implements PHP_CodeS
 
 }//end class
 
-?>
+

@@ -79,4 +79,4 @@ class Generic_Tests_PHP_UpperCaseConstantUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

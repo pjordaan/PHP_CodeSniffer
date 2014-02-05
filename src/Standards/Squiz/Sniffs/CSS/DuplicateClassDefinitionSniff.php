@@ -110,4 +110,4 @@ class Squiz_Sniffs_CSS_DuplicateClassDefinitionSniff implements PHP_CodeSniffer_
 
 
 }//end class
-?>
+

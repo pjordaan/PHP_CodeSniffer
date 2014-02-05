@@ -73,4 +73,4 @@ class Generic_Sniffs_Files_LowercasedFilenameSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+

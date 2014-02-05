@@ -221,4 +221,4 @@ class Symfony2_Sniffs_Functions_FunctionDeclarationSniff implements PHP_CodeSnif
 
 }//end class
 
-?>
+

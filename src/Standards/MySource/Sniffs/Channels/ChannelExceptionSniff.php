@@ -73,4 +73,4 @@ class MySource_Sniffs_Channels_ChannelExceptionSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

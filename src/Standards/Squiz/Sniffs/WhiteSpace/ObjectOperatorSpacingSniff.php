@@ -73,4 +73,4 @@ class Squiz_Sniffs_WhiteSpace_ObjectOperatorSpacingSniff implements PHP_CodeSnif
 
 }//end class
 
-?>
+

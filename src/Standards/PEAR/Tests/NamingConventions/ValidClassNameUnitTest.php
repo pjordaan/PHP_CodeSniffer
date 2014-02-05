@@ -77,4 +77,4 @@ class PEAR_Tests_NamingConventions_ValidClassNameUnitTest extends AbstractSniffU
 
 }//end class
 
-?>
+

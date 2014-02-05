@@ -67,4 +67,4 @@ class Squiz_Tests_CSS_ClassDefinitionClosingBraceSpaceUnitTest extends AbstractS
 
 }//end class
 
-?>
+

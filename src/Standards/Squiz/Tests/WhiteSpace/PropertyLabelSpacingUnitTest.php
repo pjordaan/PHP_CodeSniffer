@@ -70,4 +70,4 @@ class Squiz_Tests_WhiteSpace_PropertyLabelSpacingUnitTest extends AbstractSniffU
 
 }//end class
 
-?>
+

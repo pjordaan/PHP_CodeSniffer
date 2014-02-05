@@ -103,4 +103,4 @@ class Squiz_Sniffs_CSS_LowercaseStyleDefinitionSniff implements PHP_CodeSniffer_
     }//end process()
 
 }//end class
-?>
+

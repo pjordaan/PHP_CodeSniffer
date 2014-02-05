@@ -64,4 +64,4 @@ class Generic_Tests_PHP_NoSilencedErrorsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

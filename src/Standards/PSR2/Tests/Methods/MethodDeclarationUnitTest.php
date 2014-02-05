@@ -69,4 +69,4 @@ class PSR2_Tests_Methods_MethodDeclarationUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

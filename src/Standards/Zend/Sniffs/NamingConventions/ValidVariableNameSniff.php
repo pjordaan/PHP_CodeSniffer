@@ -249,4 +249,4 @@ class Zend_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniff
 
 }//end class
 
-?>
+

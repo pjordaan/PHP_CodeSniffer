@@ -889,4 +889,3 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff implements PHP_CodeSniffer
 
 }//end class
 
-?>

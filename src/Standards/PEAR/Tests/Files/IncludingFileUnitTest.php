@@ -81,4 +81,4 @@ class PEAR_Tests_Files_IncludingFileUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

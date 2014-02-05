@@ -228,4 +228,4 @@ class Squiz_Sniffs_WhiteSpace_OperatorSpacingSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+
