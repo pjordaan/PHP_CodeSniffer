@@ -1,22 +1,29 @@
 {
-    "name": "squizlabs/php_codesniffer",
-    "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+    "name": "hostnet/phpcs-tool",
+    "description": "PHP_CodeSniffer tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards. Hostnet version",
     "type": "library",
     "keywords": [
         "phpcs",
-        "standards"
+        "standards",
+        "hostnet"
     ],
     "homepage": "http://www.squizlabs.com/php-codesniffer",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Greg Sherwood",
-            "role": "lead"
+            "role": "originial author"
+        },
+        {
+            "name": "Nico Schoenmaker",  "email" : "nschoenmaker@hostnet.nl", "role" : "developper"
+        },
+        {
+            "name": "Hidde Boomsma",  "email" : "hboomsma@hostnet.nl", "role" : "developper"
         }
     ],
     "support": {
-        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name%5B%5D=PHP_CodeSniffer",
-        "source": "https://github.com/squizlabs/PHP_CodeSniffer"
+        "issues": "https://github.com/hostnet/PHP_CodeSniffer/issues",
+        "source": "https://github.com/hostnet/PHP_CodeSniffer"
     },
     "extra": {
         "branch-alias": {
@@ -47,7 +54,9 @@
             "CodeSniffer/Standards/PSR1/Sniffs/",
             "CodeSniffer/Standards/PSR2/Sniffs/",
             "CodeSniffer/Standards/Squiz/Sniffs/",
-            "CodeSniffer/Standards/Zend/Sniffs/"
+            "CodeSniffer/Standards/Zend/Sniffs/",
+            "CodeSniffer/Standards/Hostnet/Sniffs/",
+            "CodeSniffer/Standards/Symfony2/Sniffs/"
         ]
     },
     "suggest": {
@@ -59,5 +68,9 @@
     },
     "bin": [
         "scripts/phpcs"
-    ]
+    ],
+    "replace": {
+        "squizlabs/php_codesniffer" : "*"
+    }
+
 }
