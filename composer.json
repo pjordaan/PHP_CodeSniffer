@@ -33,30 +33,30 @@
     "autoload": {
         "classmap": [
             "CodeSniffer.php",
-            "CodeSniffer/CLI.php",
-            "CodeSniffer/Exception.php",
-            "CodeSniffer/File.php",
-            "CodeSniffer/Report.php",
-            "CodeSniffer/Reporting.php",
-            "CodeSniffer/Sniff.php",
-            "CodeSniffer/Tokens.php",
-            "CodeSniffer/Reports/",
-            "CodeSniffer/CommentParser/",
-            "CodeSniffer/Tokenizers/",
-            "CodeSniffer/DocGenerators/",
-            "CodeSniffer/Standards/AbstractPatternSniff.php",
-            "CodeSniffer/Standards/AbstractScopeSniff.php",
-            "CodeSniffer/Standards/AbstractVariableSniff.php",
-            "CodeSniffer/Standards/IncorrectPatternException.php",
-            "CodeSniffer/Standards/Generic/Sniffs/",
-            "CodeSniffer/Standards/MySource/Sniffs/",
-            "CodeSniffer/Standards/PEAR/Sniffs/",
-            "CodeSniffer/Standards/PSR1/Sniffs/",
-            "CodeSniffer/Standards/PSR2/Sniffs/",
-            "CodeSniffer/Standards/Squiz/Sniffs/",
-            "CodeSniffer/Standards/Zend/Sniffs/",
-            "CodeSniffer/Standards/Hostnet/Sniffs/",
-            "CodeSniffer/Standards/Symfony2/Sniffs/"
+            "src/CLI.php",
+            "src/Exception.php",
+            "src/File.php",
+            "src/Report.php",
+            "src/Reporting.php",
+            "src/Sniff.php",
+            "src/Tokens.php",
+            "src/Reports/",
+            "src/CommentParser/",
+            "src/Tokenizers/",
+            "src/DocGenerators/",
+            "src/Standards/AbstractPatternSniff.php",
+            "src/Standards/AbstractScopeSniff.php",
+            "src/Standards/AbstractVariableSniff.php",
+            "src/Standards/IncorrectPatternException.php",
+            "src/Standards/Generic/Sniffs/",
+            "src/Standards/MySource/Sniffs/",
+            "src/Standards/PEAR/Sniffs/",
+            "src/Standards/PSR1/Sniffs/",
+            "src/Standards/PSR2/Sniffs/",
+            "src/Standards/Squiz/Sniffs/",
+            "src/Standards/Zend/Sniffs/",
+            "src/Standards/Hostnet/Sniffs/",
+            "src/Standards/Symfony2/Sniffs/"
         ]
     },
     "suggest": {
@@ -71,6 +71,8 @@
     ],
     "replace": {
         "squizlabs/php_codesniffer" : "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.*"
     }
-
 }
