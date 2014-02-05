@@ -1,2 +1,7 @@
 /CodeSniffer.conf
-.idea/*
+/phpunit.xml
+.settings
+.project
+.buildpath
+/vendor
+composer.lock
