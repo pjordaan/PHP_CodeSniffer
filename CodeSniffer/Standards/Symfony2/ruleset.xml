@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<ruleset name="Symfony2">
+    <description>The Symfony2 coding standard.</description>
+
+    <!-- There should not be any code in the bundle Resources directory. -->
+    <exclude-pattern>*/Resources/*</exclude-pattern>
+
+    <!--
+
+    See the [documented coding standard](http://symfony.com/doc/current/contributing/code/standards.html)
+
+    This CodeSniffer standard does not yet enforce the following:
+
+    # Structure
+
+    * Declare class properties before methods;
+    * Declare public methods first, then protected ones and finally private ones.
+    * Use namespaces for all classes;
+    * Add PHPDoc blocks for all classes, methods, and functions;
+    * The @package and @subpackage annotations are not used.
+    * Use uppercase strings for constants with words separated with underscores
+
+    # Naming Conventions
+
+    * Use underscores for option, argument, parameter names;
+
+    -->
+
+    <rule ref="Generic">
+        <exclude name="Generic.Classes.DuplicateClassName"/>
+        <exclude name="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+        <exclude name="Generic.Commenting.Todo"/>
+        <exclude name="Generic.Commenting.Fixme"/>
+        <exclude name="Generic.Debug.ClosureLinter"/>
+        <exclude name="Generic.Debug.JSHint"/>
+        <exclude name="Generic.Files.LineLength"/>
+        <exclude name="Generic.Formatting.NoSpaceAfterCast"/>
+        <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+        <exclude name="Generic.PHP.UpperCaseConstant"/>
+        <exclude name="Generic.PHP.ForbiddenFunctions"/>
+        <exclude name="Generic.VersionControl.SubversionProperties"/>
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+        <exclude name="Generic.Files.LowercasedFilename"/>
+        <exclude name="Generic.PHP.ClosingPHPTag"/>
+    </rule>
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz">
+        <exclude name="Squiz.Arrays.ArrayDeclaration"/>
+        <exclude name="Squiz.Files.FileExtension"/>
+
+        <exclude name="Squiz.Commenting.FileComment.Missing"/>
+        <exclude name="Squiz.Commenting.FileComment.ShortFullStop"/>
+        <exclude name="Squiz.Commenting.VariableComment.Missing"/>
+        <exclude name="Squiz.Commenting.ClassComment.ShortFullStop"/>
+        <exclude name="Squiz.Commenting.ClosingDeclarationComment"/>
+        <exclude name="Squiz.Commenting.VariableComment"/>
+        <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
+        <exclude name="Squiz.Commenting.InlineComment.DocBlock"/>
+
+        <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
+
+        <exclude name="Squiz.Classes.ClassFileName"/>
+
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing"/>
+        <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace"/>
+        <exclude name="Squiz.Operators.ComparisonOperatorUsage"/>
+
+        <exclude name="Squiz.NamingConventions.ConstantCase"/>
+        <exclude name="Squiz.Strings.ConcatenationSpacing"/>
+
+        <exclude name="Squiz.PHP.CommentedOutCode"/>
+        <exclude name="Squiz.PHP.DisallowInlineIf"/>
+        <exclude name="Squiz.PHP.DisallowComparisonAssignment"/>
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration"/>
+
+        <exclude name="Squiz.Commenting.FunctionComment"/>
+        <exclude name="Squiz.NamingConventions.ValidVariableName"/>
+        <exclude name="Squiz.NamingConventions.ValidFunctionName"/>
+        <exclude name="Squiz.PHP.ForbiddenFunctions"/>
+
+        <exclude name="PEAR.Commenting.FunctionComment"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+        <exclude name="PEAR.Functions.FunctionDeclaration"/>
+        <exclude name="PEAR.Formatting.MultiLineAssignment"/>
+    </rule>
+
+    <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NotSingleLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.OneParamPerLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Classes.ClassDeclaration.EndFileAfterCloseBrace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing.After">
+        <severity>1</severity>
+    </rule>
+
+    <rule ref="Squiz.Scope.MethodScope.Missing">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Commenting.LongConditionClosingComment.Missing">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Formatting.OperatorBracket.MissingBrackets">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing.Before">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterComma">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PSR2">
+    </rule>
+
+    <!-- Import Zend coding standard (which in turn imports PEAR) -->
+    <rule ref="Zend">
+        <exclude name="Zend.Debug.CodeAnalyzer"/>
+        <exclude name="Zend.NamingConventions.ValidVariableName"/>
+    </rule>
+
+    <rule ref="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore">
+        <severity>0</severity>
+    </rule>
+
+    <!-- We provide our own subclass of PEAR's ClassComment and FunctionComment sniff, but these will do: -->
+    <rule ref="PEAR.Commenting.InlineComment"/>
+    <!-- In practice, Symfony2 spaces multiline function calls differently than Zend -->
+    <rule ref="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Functions.FunctionCallSignature.CloseBracketLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Functions.FunctionCallSignature.MultipleArguments">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Formatting.MultiLineAssignment.Indent">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PEAR.Files.IncludingFile.UseIncludeOnce">
+        <severity>0</severity>
+    </rule>
+
+
+    <rule ref="Symfony2.Commenting.ClassComment.SpacingBeforeTags">
+        <message>There should always be a description, followed by a blank line, before the tags of a class comment.</message>
+    </rule>
+
+    <rule ref="Symfony2.Commenting.FunctionComment.MissingParamComment">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Symfony2.Commenting.FunctionComment.InvalidReturnVoid">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Symfony2.Files.NoWhitespaceAfterOpenTag.Namespace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <severity>0</severity>
+    </rule>
+
+</ruleset>

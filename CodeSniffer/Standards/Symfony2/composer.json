@@ -1,0 +1,9 @@
+{
+    "name": "zerkalica/symfony2-coding-standart",
+    "description": "Symfony2 coding standart for phpcs",
+    "require": {
+        "zerkalica/PHP_CodeSniffer": "dev-master",
+        "php": ">=5.3.0"
+    },
+    "target-dir": "Symfony2"
+}
