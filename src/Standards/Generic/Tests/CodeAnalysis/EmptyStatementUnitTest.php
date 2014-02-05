@@ -78,4 +78,4 @@ class Generic_Tests_CodeAnalysis_EmptyStatementUnitTest extends AbstractSniffUni
 
 }//end class
 
-?>
+

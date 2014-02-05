@@ -78,4 +78,4 @@ class Squiz_Tests_PHP_DisallowInlineIfUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

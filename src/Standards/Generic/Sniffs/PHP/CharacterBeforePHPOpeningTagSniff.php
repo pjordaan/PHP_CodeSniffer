@@ -60,4 +60,4 @@ class Generic_Sniffs_PHP_CharacterBeforePHPOpeningTagSniff implements PHP_CodeSn
 
 }//end class
 
-?>
+

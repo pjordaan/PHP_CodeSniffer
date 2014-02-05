@@ -109,4 +109,4 @@ class MySource_Sniffs_Channels_IncludeOwnSystemSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

@@ -86,4 +86,4 @@ class Symfony2_Sniffs_NamingConventions_ValidVariableNameSniff extends Squiz_Sni
 
 }//end class
 
-?>
+

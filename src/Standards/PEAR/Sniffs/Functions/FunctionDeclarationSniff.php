@@ -334,4 +334,4 @@ class PEAR_Sniffs_Functions_FunctionDeclarationSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

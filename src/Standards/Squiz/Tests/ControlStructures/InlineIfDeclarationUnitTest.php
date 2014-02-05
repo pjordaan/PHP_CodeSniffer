@@ -75,4 +75,4 @@ class Squiz_Tests_ControlStructures_InlineIfDeclarationUnitTest extends Abstract
 
 }//end class
 
-?>
+

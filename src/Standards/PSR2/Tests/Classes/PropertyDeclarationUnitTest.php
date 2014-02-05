@@ -72,4 +72,4 @@ class PSR2_Tests_Classes_PropertyDeclarationUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

@@ -225,4 +225,4 @@ class MySource_Sniffs_Objects_CreateWidgetTypeCallbackSniff implements PHP_CodeS
 
 }//end class
 
-?>
+

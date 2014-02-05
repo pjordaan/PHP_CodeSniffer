@@ -91,4 +91,4 @@ class Squiz_Tests_PHP_DisallowSizeFunctionsInLoopsUnitTest extends AbstractSniff
 
 }//end class
 
-?>
+

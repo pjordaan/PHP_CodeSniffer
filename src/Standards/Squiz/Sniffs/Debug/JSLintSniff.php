@@ -104,4 +104,4 @@ class Squiz_Sniffs_Debug_JSLintSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

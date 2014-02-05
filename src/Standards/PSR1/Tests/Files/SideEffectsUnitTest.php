@@ -74,4 +74,4 @@ class PSR1_Tests_Files_SideEffectsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

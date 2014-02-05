@@ -350,4 +350,4 @@ abstract class PHP_CodeSniffer_CommentParser_AbstractDocElement implements PHP_C
 
 }//end class
 
-?>
+

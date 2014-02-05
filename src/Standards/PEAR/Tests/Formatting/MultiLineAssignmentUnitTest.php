@@ -66,4 +66,4 @@ class PEAR_Tests_Formatting_MultiLineAssignmentUnitTest extends AbstractSniffUni
 
 }//end class
 
-?>
+

@@ -65,4 +65,4 @@ class Squiz_Sniffs_PHP_DisallowObEndFlushSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

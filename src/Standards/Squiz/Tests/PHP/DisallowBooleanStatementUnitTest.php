@@ -67,4 +67,4 @@ class Squiz_Tests_PHP_DisallowBooleanStatementUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

@@ -64,4 +64,4 @@ class Squiz_Tests_CSS_DuplicateStyleDefinitionUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

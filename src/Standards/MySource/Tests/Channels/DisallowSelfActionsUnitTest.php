@@ -67,4 +67,4 @@ class MySource_Tests_Channels_DisallowSelfActionsUnitTest extends AbstractSniffU
 
 }//end class
 
-?>
+

@@ -74,4 +74,4 @@ class Squiz_Tests_CodeAnalysis_EmptyStatementUnitTest extends AbstractSniffUnitT
 
 }//end class
 
-?>
+

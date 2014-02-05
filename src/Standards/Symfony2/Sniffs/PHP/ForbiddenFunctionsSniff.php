@@ -77,4 +77,4 @@ class Symfony2_Sniffs_PHP_ForbiddenFunctionsSniff extends Squiz_Sniffs_PHP_Forbi
 
 //end class
 
-?>
+

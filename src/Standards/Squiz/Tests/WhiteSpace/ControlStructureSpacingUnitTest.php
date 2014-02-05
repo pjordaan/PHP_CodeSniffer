@@ -103,4 +103,4 @@ class Squiz_Tests_WhiteSpace_ControlStructureSpacingUnitTest extends AbstractSni
 
 }//end class
 
-?>
+

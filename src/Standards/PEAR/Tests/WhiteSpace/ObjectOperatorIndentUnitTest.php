@@ -69,4 +69,4 @@ class PEAR_Tests_WhiteSpace_ObjectOperatorIndentUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

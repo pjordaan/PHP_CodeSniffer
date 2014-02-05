@@ -81,4 +81,4 @@ class Squiz_Sniffs_Objects_ObjectMemberCommaSniff implements PHP_CodeSniffer_Sni
 
 }//end class
 
-?>
+

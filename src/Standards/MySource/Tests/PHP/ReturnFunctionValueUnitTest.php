@@ -66,4 +66,4 @@ class MySource_Tests_PHP_ReturnFunctionValueUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

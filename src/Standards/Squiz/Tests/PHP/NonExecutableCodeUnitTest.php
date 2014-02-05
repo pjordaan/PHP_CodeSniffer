@@ -93,4 +93,4 @@ class Squiz_Tests_PHP_NonExecutableCodeUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

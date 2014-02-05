@@ -69,4 +69,4 @@ class Generic_Tests_PHP_LowerCaseKeywordUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

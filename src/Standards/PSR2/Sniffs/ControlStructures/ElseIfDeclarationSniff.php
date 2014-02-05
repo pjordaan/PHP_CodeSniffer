@@ -65,4 +65,4 @@ class PSR2_Sniffs_ControlStructures_ElseIfDeclarationSniff implements PHP_CodeSn
 }//end class
 
 
-?>
+

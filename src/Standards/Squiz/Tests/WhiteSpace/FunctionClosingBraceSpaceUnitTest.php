@@ -87,4 +87,4 @@ class Squiz_Tests_WhiteSpace_FunctionClosingBraceSpaceUnitTest extends AbstractS
 
 }//end class
 
-?>
+

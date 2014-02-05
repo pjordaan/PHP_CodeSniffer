@@ -115,4 +115,4 @@ class PSR2_Sniffs_Methods_MethodDeclarationSniff extends PHP_CodeSniffer_Standar
 
 }//end class
 
-?>
+

@@ -73,4 +73,4 @@ class Squiz_Tests_Objects_DisallowObjectStringIndexUnitTest extends AbstractSnif
 
 }//end class
 
-?>
+

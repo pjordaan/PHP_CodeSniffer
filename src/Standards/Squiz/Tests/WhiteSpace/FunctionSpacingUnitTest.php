@@ -85,4 +85,4 @@ class Squiz_Tests_WhiteSpace_FunctionSpacingUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

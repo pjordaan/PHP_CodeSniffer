@@ -127,4 +127,4 @@ class MySource_Sniffs_Commenting_FunctionCommentSniff extends Squiz_Sniffs_Comme
 
 }//end class
 
-?>
+

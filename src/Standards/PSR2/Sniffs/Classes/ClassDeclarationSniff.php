@@ -329,4 +329,4 @@ class PSR2_Sniffs_Classes_ClassDeclarationSniff extends PEAR_Sniffs_Classes_Clas
 
 }//end class
 
-?>
+

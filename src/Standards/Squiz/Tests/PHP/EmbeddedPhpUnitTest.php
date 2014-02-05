@@ -81,4 +81,4 @@ class Squiz_Tests_PHP_EmbeddedPhpUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

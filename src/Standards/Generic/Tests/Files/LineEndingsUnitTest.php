@@ -66,4 +66,4 @@ class Generic_Tests_Files_LineEndingsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

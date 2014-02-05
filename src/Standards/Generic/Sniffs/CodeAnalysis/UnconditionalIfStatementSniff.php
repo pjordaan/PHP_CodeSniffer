@@ -103,4 +103,3 @@ class Generic_Sniffs_CodeAnalysis_UnconditionalIfStatementSniff implements PHP_C
 
 }//end class
 
-?>

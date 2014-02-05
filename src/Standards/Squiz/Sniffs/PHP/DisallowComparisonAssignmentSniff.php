@@ -122,4 +122,4 @@ class Squiz_Sniffs_PHP_DisallowComparisonAssignmentSniff implements PHP_CodeSnif
 
 }//end class
 
-?>
+

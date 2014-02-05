@@ -71,4 +71,4 @@ class Squiz_Tests_PHP_DisallowMultipleAssignmentsUnitTest extends AbstractSniffU
 
 }//end class
 
-?>
+

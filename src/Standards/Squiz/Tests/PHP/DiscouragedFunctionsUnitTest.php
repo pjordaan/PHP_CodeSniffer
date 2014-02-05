@@ -65,4 +65,4 @@ class Squiz_Tests_PHP_DiscouragedFunctionsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

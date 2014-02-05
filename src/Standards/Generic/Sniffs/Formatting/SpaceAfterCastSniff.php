@@ -72,4 +72,4 @@ class Generic_Sniffs_Formatting_SpaceAfterCastSniff implements PHP_CodeSniffer_S
 
 }//end class
 
-?>
+

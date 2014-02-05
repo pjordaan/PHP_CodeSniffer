@@ -805,4 +805,4 @@ class PHP_CodeSniffer_Tokenizers_PHP
 
 }//end class
 
-?>
+

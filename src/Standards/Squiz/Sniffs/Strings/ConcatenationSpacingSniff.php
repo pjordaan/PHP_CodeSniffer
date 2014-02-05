@@ -68,4 +68,4 @@ class Squiz_Sniffs_Strings_ConcatenationSpacingSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

@@ -66,4 +66,4 @@ class Squiz_Tests_Scope_MemberVarScopeUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

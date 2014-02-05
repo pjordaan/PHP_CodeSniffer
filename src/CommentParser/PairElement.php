@@ -168,4 +168,4 @@ class PHP_CodeSniffer_CommentParser_PairElement extends PHP_CodeSniffer_CommentP
 
 }//end class
 
-?>
+

@@ -162,4 +162,4 @@ class Core_ErrorSuppressionTest extends PHPUnit_Framework_TestCase
 
 }//end class
 
-?>
+

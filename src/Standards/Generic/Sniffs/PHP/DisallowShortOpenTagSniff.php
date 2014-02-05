@@ -82,4 +82,4 @@ class Generic_Sniffs_PHP_DisallowShortOpenTagSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+

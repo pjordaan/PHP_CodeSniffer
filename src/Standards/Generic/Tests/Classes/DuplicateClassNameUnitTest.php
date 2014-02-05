@@ -91,4 +91,4 @@ class Generic_Tests_Classes_DuplicateClassNameUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

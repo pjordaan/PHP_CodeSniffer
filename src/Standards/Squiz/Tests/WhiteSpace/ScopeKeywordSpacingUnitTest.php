@@ -71,4 +71,4 @@ class Squiz_Tests_WhiteSpace_ScopeKeywordSpacingUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

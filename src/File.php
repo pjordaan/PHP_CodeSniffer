@@ -2932,4 +2932,4 @@ class PHP_CodeSniffer_File
 
 }//end class
 
-?>
+

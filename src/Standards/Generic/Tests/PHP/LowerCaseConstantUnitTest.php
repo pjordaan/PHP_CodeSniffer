@@ -100,4 +100,4 @@ class Generic_Tests_PHP_LowerCaseConstantUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -125,4 +125,4 @@ class Squiz_Tests_ControlStructures_ControlSignatureUnitTest extends AbstractSni
 
 }//end class
 
-?>
+

@@ -76,4 +76,4 @@ class PSR2_Sniffs_Namespaces_NamespaceDeclarationSniff implements PHP_CodeSniffe
 }//end class
 
 
-?>
+

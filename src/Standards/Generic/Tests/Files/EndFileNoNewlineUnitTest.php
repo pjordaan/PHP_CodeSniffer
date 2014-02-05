@@ -84,4 +84,4 @@ class Generic_Tests_Files_EndFileNoNewlineUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

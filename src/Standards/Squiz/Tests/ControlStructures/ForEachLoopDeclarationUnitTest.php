@@ -72,4 +72,4 @@ class Squiz_Tests_ControlStructures_ForEachLoopDeclarationUnitTest extends Abstr
 
 }//end class
 
-?>
+

@@ -269,4 +269,4 @@ class Squiz_Sniffs_Commenting_InlineCommentSniff implements PHP_CodeSniffer_Snif
 }//end class
 
 
-?>
+

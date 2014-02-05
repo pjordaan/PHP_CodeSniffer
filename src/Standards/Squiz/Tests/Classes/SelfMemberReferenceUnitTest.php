@@ -71,4 +71,4 @@ class Squiz_Tests_Classes_SelfMemberReferenceUnitTest extends AbstractSniffUnitT
 
 }//end class
 
-?>
+

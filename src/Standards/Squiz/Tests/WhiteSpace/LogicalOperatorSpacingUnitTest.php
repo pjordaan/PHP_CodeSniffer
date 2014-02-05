@@ -70,4 +70,4 @@ class Squiz_Tests_WhiteSpace_LogicalOperatorSpacingUnitTest extends AbstractSnif
 
 }//end class
 
-?>
+

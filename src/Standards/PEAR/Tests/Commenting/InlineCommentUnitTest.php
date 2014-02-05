@@ -68,4 +68,4 @@ class PEAR_Tests_Commenting_InlineCommentUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

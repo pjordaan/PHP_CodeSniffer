@@ -92,4 +92,4 @@ class Squiz_Sniffs_Classes_ValidClassNameSniff implements PHP_CodeSniffer_Sniff
 }//end class
 
 
-?>
+

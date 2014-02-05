@@ -71,4 +71,4 @@ class Squiz_Tests_CSS_ShorthandSizeUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

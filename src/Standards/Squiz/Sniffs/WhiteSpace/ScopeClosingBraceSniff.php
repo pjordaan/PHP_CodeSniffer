@@ -107,4 +107,4 @@ class Squiz_Sniffs_WhiteSpace_ScopeClosingBraceSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

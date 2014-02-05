@@ -130,4 +130,4 @@ class PHP_CodeSniffer_Reports_Gitblame extends PHP_CodeSniffer_Reports_VersionCo
 
 }//end class
 
-?>
+

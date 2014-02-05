@@ -186,4 +186,4 @@ class PHP_CodeSniffer_DocGenerators_Generator
 
 }//end class
 
-?>
+

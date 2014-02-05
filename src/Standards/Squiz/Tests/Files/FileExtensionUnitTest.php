@@ -80,4 +80,4 @@ class Squiz_Tests_Files_FileExtensionUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

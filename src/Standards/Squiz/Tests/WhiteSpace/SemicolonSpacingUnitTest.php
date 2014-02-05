@@ -90,4 +90,4 @@ class Squiz_Tests_WhiteSpace_SemicolonSpacingUnitTest extends AbstractSniffUnitT
 
 }//end class
 
-?>
+

@@ -72,4 +72,4 @@ class Squiz_Tests_CSS_ColonSpacingUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -104,4 +104,4 @@ class Squiz_Sniffs_CSS_OpacitySniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

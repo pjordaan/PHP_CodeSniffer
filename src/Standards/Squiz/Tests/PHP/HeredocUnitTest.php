@@ -67,4 +67,4 @@ class Squiz_Tests_PHP_HeredocUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

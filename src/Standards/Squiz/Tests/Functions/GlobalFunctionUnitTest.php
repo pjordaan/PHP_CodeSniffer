@@ -66,4 +66,4 @@ class Squiz_Tests_Functions_GlobalFunctionUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

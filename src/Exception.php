@@ -30,4 +30,4 @@ class PHP_CodeSniffer_Exception extends Exception
 
 }//end class
 
-?>
+

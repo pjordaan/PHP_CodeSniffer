@@ -237,7 +237,7 @@ class PHP_CodeSniffer_Tokenizers_CSS extends PHP_CodeSniffer_Tokenizers_PHP
                 continue;
             }//end if
 
-            if ($token['code'] === T_COMMENT 
+            if ($token['code'] === T_COMMENT
                 && substr($token['content'], -2) === '*/'
             ) {
                 // Multi-line comment is done.
@@ -395,5 +395,3 @@ class PHP_CodeSniffer_Tokenizers_CSS extends PHP_CodeSniffer_Tokenizers_PHP
 
 
 }//end class
-
-?>

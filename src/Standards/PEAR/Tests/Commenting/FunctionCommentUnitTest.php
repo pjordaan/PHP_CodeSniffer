@@ -88,4 +88,4 @@ class PEAR_Tests_Commenting_FunctionCommentUnitTest extends AbstractSniffUnitTes
 
 }//end class
 
-?>
+

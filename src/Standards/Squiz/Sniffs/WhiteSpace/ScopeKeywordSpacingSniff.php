@@ -89,4 +89,4 @@ class Squiz_Sniffs_WhiteSpace_ScopeKeywordSpacingSniff implements PHP_CodeSniffe
 
 }//end class
 
-?>
+

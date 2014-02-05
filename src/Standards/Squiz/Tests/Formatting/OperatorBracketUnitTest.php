@@ -117,4 +117,4 @@ class Squiz_Tests_Formatting_OperatorBracketUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

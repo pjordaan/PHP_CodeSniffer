@@ -68,4 +68,4 @@ class Squiz_Tests_Strings_ConcatenationSpacingUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

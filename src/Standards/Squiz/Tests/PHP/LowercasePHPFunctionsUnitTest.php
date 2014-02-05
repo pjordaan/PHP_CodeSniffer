@@ -67,4 +67,4 @@ class Squiz_Tests_PHP_LowercasePHPFunctionsUnitTest extends AbstractSniffUnitTes
 
 }//end class
 
-?>
+

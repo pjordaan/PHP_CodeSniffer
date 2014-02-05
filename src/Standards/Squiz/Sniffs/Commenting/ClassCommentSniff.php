@@ -251,4 +251,4 @@ class Squiz_Sniffs_Commenting_ClassCommentSniff implements PHP_CodeSniffer_Sniff
 
 
 }//end class
-?>
+

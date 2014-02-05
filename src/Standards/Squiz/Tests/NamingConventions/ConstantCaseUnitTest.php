@@ -98,4 +98,4 @@ class Squiz_Tests_NamingConventions_ConstantCaseUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

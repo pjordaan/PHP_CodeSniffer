@@ -880,4 +880,4 @@ class PHP_CodeSniffer_CLI
 
 }//end class
 
-?>
+

@@ -67,4 +67,4 @@ class Squiz_Tests_ControlStructures_ElseIfDeclarationUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

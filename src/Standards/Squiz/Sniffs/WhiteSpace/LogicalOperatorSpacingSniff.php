@@ -103,4 +103,4 @@ class Squiz_Sniffs_WhiteSpace_LogicalOperatorSpacingSniff implements PHP_CodeSni
 
 }//end class
 
-?>
+

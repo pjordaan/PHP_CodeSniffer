@@ -64,4 +64,4 @@ class Generic_Tests_Files_ByteOrderMarkUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

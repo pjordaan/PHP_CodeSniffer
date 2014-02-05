@@ -81,4 +81,4 @@ class PEAR_Tests_Functions_FunctionDeclarationUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

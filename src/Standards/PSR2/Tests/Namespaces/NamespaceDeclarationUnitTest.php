@@ -64,4 +64,4 @@ class PSR2_Tests_Namespaces_NamespaceDeclarationUnitTest extends AbstractSniffUn
 
 }//end class
 
-?>
+

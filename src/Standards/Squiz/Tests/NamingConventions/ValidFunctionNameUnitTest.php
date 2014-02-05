@@ -75,4 +75,4 @@ class Squiz_Tests_NamingConventions_ValidFunctionNameUnitTest extends AbstractSn
 
 }//end class
 
-?>
+

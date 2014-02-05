@@ -68,4 +68,4 @@ class Squiz_Tests_WhiteSpace_ScopeClosingBraceUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

@@ -45,4 +45,4 @@ class PEAR_Sniffs_WhiteSpace_ScopeIndentSniff extends Generic_Sniffs_WhiteSpace_
 
 }//end class
 
-?>
+

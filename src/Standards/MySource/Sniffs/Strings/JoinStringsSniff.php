@@ -85,4 +85,4 @@ class MySource_Sniffs_Strings_JoinStringsSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

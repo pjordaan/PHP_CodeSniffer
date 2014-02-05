@@ -66,4 +66,4 @@ class MySource_Tests_PHP_EvalObjectFactoryUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

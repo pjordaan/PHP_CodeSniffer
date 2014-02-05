@@ -90,4 +90,4 @@ class Generic_Tests_WhiteSpace_DisallowSpaceIndentUnitTest extends AbstractSniff
 
 }//end class
 
-?>
+

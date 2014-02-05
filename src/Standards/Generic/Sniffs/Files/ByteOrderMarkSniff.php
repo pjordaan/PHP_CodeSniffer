@@ -90,4 +90,4 @@ class Generic_Sniffs_Files_ByteOrderMarkSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

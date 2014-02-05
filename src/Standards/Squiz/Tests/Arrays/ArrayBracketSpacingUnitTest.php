@@ -69,4 +69,4 @@ class Squiz_Tests_Arrays_ArrayBracketSpacingUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

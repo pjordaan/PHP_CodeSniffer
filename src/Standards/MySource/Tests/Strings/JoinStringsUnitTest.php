@@ -76,4 +76,4 @@ class MySource_Tests_Strings_JoinStringsUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

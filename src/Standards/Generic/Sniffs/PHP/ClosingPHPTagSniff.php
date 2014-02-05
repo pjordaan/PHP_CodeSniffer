@@ -61,4 +61,4 @@ class Generic_Sniffs_PHP_ClosingPHPTagSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

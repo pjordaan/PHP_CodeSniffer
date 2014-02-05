@@ -68,4 +68,4 @@ class Generic_Tests_NamingConventions_UpperCaseConstantNameUnitTest extends Abst
 
 }//end class
 
-?>
+

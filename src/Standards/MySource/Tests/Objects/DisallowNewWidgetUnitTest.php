@@ -64,4 +64,4 @@ class MySource_Tests_Objects_DisallowNewWidgetUnitTest extends AbstractSniffUnit
 
 }//end class
 
-?>
+

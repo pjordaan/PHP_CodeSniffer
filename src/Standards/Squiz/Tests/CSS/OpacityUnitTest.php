@@ -69,4 +69,4 @@ class Squiz_Tests_CSS_OpacityUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

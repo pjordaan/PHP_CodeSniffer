@@ -66,4 +66,4 @@ class Squiz_Tests_CSS_MissingColonUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

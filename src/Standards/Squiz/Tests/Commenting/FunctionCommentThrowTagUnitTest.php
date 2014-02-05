@@ -78,4 +78,4 @@ class Squiz_Tests_Commenting_FunctionCommentThrowTagUnitTest extends AbstractSni
 
 }//end class
 
-?>
+

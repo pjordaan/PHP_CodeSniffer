@@ -64,4 +64,4 @@ class Generic_Tests_PHP_SAPIUsageUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

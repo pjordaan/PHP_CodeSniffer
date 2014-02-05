@@ -103,4 +103,4 @@ class Squiz_Tests_Operators_ComparisonOperatorUsageUnitTest extends AbstractSnif
 
 }//end class
 
-?>
+

@@ -97,4 +97,4 @@ class Squiz_Sniffs_Classes_DuplicatePropertySniff implements PHP_CodeSniffer_Sni
 }//end class
 
 
-?>
+

@@ -122,4 +122,4 @@ class Generic_Sniffs_Strings_UnnecessaryStringConcatSniff implements PHP_CodeSni
 
 }//end class
 
-?>
+

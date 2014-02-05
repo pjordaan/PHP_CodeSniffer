@@ -74,4 +74,4 @@ class Squiz_Tests_WhiteSpace_MemberVarSpacingUnitTest extends AbstractSniffUnitT
 
 }//end class
 
-?>
+

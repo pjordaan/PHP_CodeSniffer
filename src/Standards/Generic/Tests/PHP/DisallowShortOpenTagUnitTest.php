@@ -78,4 +78,4 @@ class Generic_Tests_PHP_DisallowShortOpenTagUnitTest extends AbstractSniffUnitTe
 
 }//end class
 
-?>
+

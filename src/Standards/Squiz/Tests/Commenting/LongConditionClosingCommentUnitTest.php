@@ -110,4 +110,4 @@ class Squiz_Tests_Commenting_LongConditionClosingCommentUnitTest extends Abstrac
 
 }//end class
 
-?>
+

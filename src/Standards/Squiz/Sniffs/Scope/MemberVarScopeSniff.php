@@ -87,4 +87,4 @@ class Squiz_Sniffs_Scope_MemberVarScopeSniff extends PHP_CodeSniffer_Standards_A
 
 }//end class
 
-?>
+

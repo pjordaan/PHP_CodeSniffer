@@ -105,4 +105,4 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
 
 }//end class
 
-?>
+

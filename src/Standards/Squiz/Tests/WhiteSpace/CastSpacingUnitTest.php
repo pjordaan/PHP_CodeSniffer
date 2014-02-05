@@ -69,4 +69,4 @@ class Squiz_Tests_WhiteSpace_CastSpacingUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

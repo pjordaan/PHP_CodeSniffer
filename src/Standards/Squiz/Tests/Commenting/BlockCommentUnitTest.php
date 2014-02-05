@@ -103,4 +103,4 @@ class Squiz_Tests_Commenting_BlockCommentUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

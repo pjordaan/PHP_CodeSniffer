@@ -112,4 +112,4 @@ class Generic_Sniffs_Files_LineEndingsSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

@@ -64,4 +64,4 @@ class Squiz_Tests_CSS_SemicolonSpacingUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

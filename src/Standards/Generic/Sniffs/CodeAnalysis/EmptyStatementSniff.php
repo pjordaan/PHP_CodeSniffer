@@ -125,4 +125,4 @@ class Generic_Sniffs_CodeAnalysis_EmptyStatementSniff implements PHP_CodeSniffer
 
 }//end class
 
-?>
+

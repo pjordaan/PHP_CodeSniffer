@@ -116,4 +116,4 @@ class MySource_Sniffs_PHP_GetRequestDataSniff implements PHP_CodeSniffer_Sniff
 
 }//end class
 
-?>
+

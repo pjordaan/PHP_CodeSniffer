@@ -78,4 +78,4 @@ class Squiz_Sniffs_CSS_DisallowMultipleStyleDefinitionsSniff implements PHP_Code
     }//end process()
 
 }//end class
-?>
+

@@ -69,4 +69,4 @@ class MySource_Sniffs_Objects_DisallowNewWidgetSniff implements PHP_CodeSniffer_
 
 }//end class
 
-?>
+

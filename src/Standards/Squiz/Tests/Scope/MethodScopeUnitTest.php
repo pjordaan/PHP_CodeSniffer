@@ -66,4 +66,4 @@ class Squiz_Tests_Scope_MethodScopeUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -83,4 +83,4 @@ class Generic_Tests_Strings_UnnecessaryStringConcatUnitTest extends AbstractSnif
 
 }//end class
 
-?>
+

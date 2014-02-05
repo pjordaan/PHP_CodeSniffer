@@ -69,4 +69,4 @@ class Generic_Tests_Metrics_NestingLevelUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+

@@ -69,4 +69,4 @@ class Squiz_Tests_WhiteSpace_ObjectOperatorSpacingUnitTest extends AbstractSniff
 
 }//end class
 
-?>
+

@@ -71,4 +71,3 @@ class Symfony2_Sniffs_Files_NoWhitespaceAfterOpenTagSniff implements PHP_CodeSni
 
 //end class
 
-?>

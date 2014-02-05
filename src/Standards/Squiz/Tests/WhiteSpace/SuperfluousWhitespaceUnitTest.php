@@ -105,4 +105,4 @@ class Squiz_Tests_WhiteSpace_SuperfluousWhitespaceUnitTest extends AbstractSniff
 
 }//end class
 
-?>
+

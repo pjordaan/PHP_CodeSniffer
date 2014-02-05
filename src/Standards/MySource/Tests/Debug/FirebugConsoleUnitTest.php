@@ -75,4 +75,4 @@ class MySource_Tests_Debug_FirebugConsoleUnitTest extends AbstractSniffUnitTest
 
 }//end class
 
-?>
+
