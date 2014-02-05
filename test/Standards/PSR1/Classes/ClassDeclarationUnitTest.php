@@ -38,19 +38,26 @@ class PSR1_Classes_ClassDeclarationUnitTest extends AbstractSniffUnitTest
      *
      * @return array(int => int)
      */
-    public function getErrorList()
+    public function getErrorList($testFile = '')
     {
-        if (version_compare(PHP_VERSION, '5.3.0') >= 0) {
-            return array(
-                    2 => 1,
-                    3 => 2,
-                   );
-        } else {
-            return array(
-                    3 => 1,
-                   );
+        switch($testFile) {
+          case 'ClassDeclarationUnitTest.0.inc':
+              return array(
+                  2 => 1,
+                  3 => 2,
+              );
+          case 'ClassDeclarationUnitTest.1.inc':
+          case 'ClassDeclarationUnitTest.2.inc':
+          case 'ClassDeclarationUnitTest.3.inc':
+          case 'ClassDeclarationUnitTest.4.inc':
+            return array();
+          case 'ClassDeclarationUnitTest.5.inc':
+            return array(2 => 1);
+          case 'ClassDeclarationUnitTest.6.inc':
+            return array(6 => 1);
+          case 'ClassDeclarationUnitTest.7.inc':
+            return array(7 => 1);
         }
-
     }//end getErrorList()
 
 
