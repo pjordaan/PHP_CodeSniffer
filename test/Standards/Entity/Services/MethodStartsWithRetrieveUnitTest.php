@@ -4,7 +4,7 @@
  * Unit test for MethodStartsWithRetrieveSniff
  * @author Nico Schoenmaker <nschoenmaker@hostnet.nl>
  */
-class Hostnet_Entity_MethodStartsWithRetrieveUnitTest extends AbstractSniffUnitTest
+class Entity_Services_MethodStartsWithRetrieveUnitTest extends AbstractSniffUnitTest
 {
     /**
      * Returns the lines where errors should occur.

@@ -8,7 +8,7 @@
  * Practice has shown that programmers sometimes try to use retrieveByXxx in Doctrine as well.
  * @author Nico Schoenmaker <nschoenmaker@hostnet.nl>
  */
-class Hostnet_Sniffs_Entity_MethodStartsWithRetrieveSniff implements \PHP_CodeSniffer_Sniff
+class Entity_Sniffs_Services_MethodStartsWithRetrieveSniff implements \PHP_CodeSniffer_Sniff
 {
 
   public function register()
