@@ -4,7 +4,7 @@
  * Unit test for AuthorIsFormattedCorrectly
  * @author Nico Schoenmaker <nschoenmaker@hostnet.nl>
  */
-class Hostnet_Comments_AuthorIsFormattedCorrectlyUnitTest extends AbstractSniffUnitTest
+class Hostnet_Commenting_AuthorIsFormattedCorrectlyUnitTest extends AbstractSniffUnitTest
 {
     /**
      * Returns the lines where errors should occur.
@@ -29,7 +29,7 @@ class Hostnet_Comments_AuthorIsFormattedCorrectlyUnitTest extends AbstractSniffU
      */
     public function getWarningList()
     {
-        return array();
+        return array(47 => 1);
 
     }//end getWarningList()
 
