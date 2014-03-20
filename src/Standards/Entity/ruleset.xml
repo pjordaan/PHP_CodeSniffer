@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ruleset name="Entity">
+ <description>Coding standard that applies to entity packages.</description>
+</ruleset>
