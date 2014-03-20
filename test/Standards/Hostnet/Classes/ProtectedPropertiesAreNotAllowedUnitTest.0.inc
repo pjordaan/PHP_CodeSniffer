@@ -22,5 +22,14 @@ class MyClass
 
     protected $bleh;
 
+    protected     $checkWhiteSpace;
+
+    protected
+      $checkNewLine;
+
+    protected    /*euauueauaoe*/ $checkComments;
+
+    protected     $multipleVariablesOnOneLine1;     protected     $multipleVariablesOnOneLine2;
+
     const COMPLICATED = 'public';
 }
