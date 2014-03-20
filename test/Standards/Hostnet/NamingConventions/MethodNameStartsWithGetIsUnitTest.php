@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Unit test for ProtectedPropertiesAreNotAllowedSniff
+ * Unit test for MethodNameStartsWithGetIs
  * @author Nico Schoenmaker <nschoenmaker@hostnet.nl>
  */
-class Hostnet_Classes_ProtectedPropertiesAreNotAllowedUnitTest extends AbstractSniffUnitTest
+class Hostnet_NamingConventions_MethodNameStartsWithGetIsUnitTest extends AbstractSniffUnitTest
 {
     /**
      * Returns the lines where errors should occur.
@@ -16,7 +16,7 @@ class Hostnet_Classes_ProtectedPropertiesAreNotAllowedUnitTest extends AbstractS
      */
     public function getErrorList($filename = null)
     {
-        return array(9 => 1, 23 => 1, 25 => 1, 27 => 1, 30 => 1, 32 => 2);
+        return array(13 => 1, 17 => 1, 35 => 1, 39 => 1, 43 => 1, 49 => 1, 55 => 1, 59 => 1, 73 => 1, 78 => 1, 83 => 1);
     }//end getErrorList()
 
     /**
