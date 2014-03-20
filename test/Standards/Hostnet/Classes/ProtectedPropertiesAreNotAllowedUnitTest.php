@@ -16,7 +16,7 @@ class Hostnet_Classes_ProtectedPropertiesAreNotAllowedUnitTest extends AbstractS
      */
     public function getErrorList($filename = null)
     {
-        return array(9 => 1, 11 => 1, 21 => 1);
+        return array(9 => 1, 23 => 1, 25 => 1, 27 => 1, 30 => 1, 32 => 2);
     }//end getErrorList()
 
     /**
