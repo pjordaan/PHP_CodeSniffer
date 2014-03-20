@@ -4,11 +4,11 @@ class Hostnet_Sniffs_NamingConventions_MethodNameStartsWithGetIsSniff implements
 {
     public function register()
     {
-        // TODO: Auto-generated method stub
         return array(
             T_FUNCTION
         );
     }
+
     public function process(PHP_CodeSniffer_File $phpcs_file, $stack_ptr)
     {
         // search till T_STRING
