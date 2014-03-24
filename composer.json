@@ -25,11 +25,6 @@
         "issues": "https://github.com/hostnet/PHP_CodeSniffer/issues",
         "source": "https://github.com/hostnet/PHP_CodeSniffer"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-phpcs-fixer": "2.0.x-dev"
-        }
-    },
     "autoload": {
         "classmap": [
             "CodeSniffer.php",
@@ -63,7 +58,7 @@
         "phpunit/php-timer": "dev-master"
     },
     "require": {
-        "php": ">=5.1.2",
+        "php": ">=5.3",
         "ext-tokenizer": "*"
     },
     "bin": [
