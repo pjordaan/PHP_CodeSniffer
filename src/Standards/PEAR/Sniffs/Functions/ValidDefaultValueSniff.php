@@ -60,29 +60,37 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
         $argStart = $tokens[$stackPtr]['parenthesis_opener'];
         $argEnd   = $tokens[$stackPtr]['parenthesis_closer'];
 
-        // Flag for when we have found a default in our arg list.
-        // If there is a value without a default after this, it is an error.
-        $defaultFound = false;
-
         $nextArg = $argStart;
+        $parameters = [];
         while (($nextArg = $phpcsFile->findNext(T_VARIABLE, ($nextArg + 1), $argEnd)) !== false) {
-            $argHasDefault = self::_argHasDefault($phpcsFile, $nextArg);
-            if (($argHasDefault === false) && ($defaultFound === true)) {
-                $error  = 'Arguments with default values must be at the end of the argument list';
-                $phpcsFile->addError($error, $nextArg, 'NotAtEnd');
-                return;
-            }
-
-            if ($argHasDefault === true) {
-                $defaultFound = true;
-            }
+            $argDefault = self::_argGetDefault($phpcsFile, $nextArg);
+            $argHasTypeHint = self::_argHasTypeHint($phpcsFile, $nextArg);
+            $parameters[$nextArg] = ['null_hint' => $argDefault['code'] === T_NULL && $argHasTypeHint, 'default' => $argDefault['content']];
         }
 
+        $parameters = array_reverse($parameters, true);
+        $gap = false;
+        $error  = 'Arguments with default values must be at the end of the argument list';
+        foreach($parameters as $token => $param) {
+            $nullHint = $param['null_hint'];
+            $default = $param['default'];
+
+            if ($gap  === true && $default && $nullHint === false) {
+                $err = 'X';
+                $phpcsFile->addError($error, $token, 'NotAtEnd');
+            } else {
+                $err =' ';
+            }
+            if (!$default) {
+                $gap = true;
+            }
+        }
     }//end process()
 
 
     /**
-     * Returns true if the passed argument has a default value.
+     * Returns TOKEN_CODE if the passed argument has a default value or false.
+     * 
      *
      * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
      * @param int                  $argPtr    The position of the argument
@@ -90,7 +98,7 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
      *
      * @return bool
      */
-    private static function _argHasDefault(PHP_CodeSniffer_File $phpcsFile, $argPtr)
+    private static function _argGetDefault(PHP_CodeSniffer_File $phpcsFile, $argPtr)
     {
         $tokens    = $phpcsFile->getTokens();
         $nextToken = $phpcsFile->findNext(PHP_CodeSniffer_Tokens::$emptyTokens, ($argPtr + 1), null, true);
@@ -98,11 +106,33 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
             return false;
         }
 
+        $defaultToken = $phpcsFile->findNext(PHP_CodeSniffer_Tokens::$emptyTokens, ($nextToken + 1), null, true);
+        return $tokens[$defaultToken];
+
+    }//end _argGetDefault()
+
+    /**
+     * Returns true if the passed argument has a Type Hint.
+     * 
+     *
+     * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
+     * @param int                  $argPtr    The position of the argument
+     *                                        in the stack.
+     *
+     * @return bool
+     */
+    private static function _argHasTypeHint(PHP_CodeSniffer_File $phpcsFile, $argPtr)
+    {
+        $tokens    = $phpcsFile->getTokens();
+        $nextToken = $phpcsFile->findPrevious(PHP_CodeSniffer_Tokens::$emptyTokens, ($argPtr - 1), null, true);
+        if ($tokens[$nextToken]['code'] !== T_STRING) {
+            return false;
+        }
+
         return true;
 
-    }//end _argHasDefault()
+    }//end _argHasTypeHint()
 
 
 }//end class
-
 

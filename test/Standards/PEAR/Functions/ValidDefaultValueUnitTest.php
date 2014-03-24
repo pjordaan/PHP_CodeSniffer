@@ -8,7 +8,7 @@
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
- * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
+ * @copyright 2006-2012 Squiz Pty Ltd (ABN 77 084 670 600)
  * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
@@ -23,7 +23,7 @@
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Marc McIntyre <mmcintyre@squiz.net>
- * @copyright 2006-2014 Squiz Pty Ltd (ABN 77 084 670 600)
+ * @copyright 2006-2012 Squiz Pty Ltd (ABN 77 084 670 600)
  * @license   https://github.com/squizlabs/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
@@ -43,12 +43,21 @@ class PEAR_Functions_ValidDefaultValueUnitTest extends AbstractSniffUnitTest
     public function getErrorList()
     {
         return array(
-                29 => 1,
-                34 => 1,
-                39 => 1,
-                71 => 1,
-                76 => 1,
-                81 => 1,
+                 29 => 1,
+                 34 => 1,
+                 39 => 1,
+                 72 => 1,
+                 79 => 1,
+                 84 => 1,
+                 98 => 1,
+                 99 => 1,
+                102 => 2,
+                103 => 1,
+                105 => 1,
+                106 => 1,
+                113 => 1,
+                115 => 1,
+                122 => 2
                );
 
     }//end getErrorList()
@@ -70,5 +79,4 @@ class PEAR_Functions_ValidDefaultValueUnitTest extends AbstractSniffUnitTest
 
 
 }//end class
-
 
