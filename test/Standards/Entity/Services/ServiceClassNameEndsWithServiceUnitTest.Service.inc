@@ -33,3 +33,6 @@ class MyService extends EntityRepository
         return "aap";
     }
 }
+
+class MyServiceTest extends \PHPUnit_Framework_TestCase {
+}

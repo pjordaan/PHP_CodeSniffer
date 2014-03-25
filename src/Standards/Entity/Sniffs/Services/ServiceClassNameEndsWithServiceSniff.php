@@ -45,10 +45,14 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
 
         $class_name_token = [];
         if($t_class_pointer) {
+            $extends_class = $phpcsFile->findExtendedClassName($t_class_pointer); 
+            if($extends_class == "\PHPUnit_Framework_TestCase") {
+                return;
+            }
             $class_name_token = $this->findNextTStringContent($tokens, $t_class_pointer);
 
             $is_service_class = preg_match('/.*Service$/', $class_name_token['content']) === 1;
-            $is_service_extends = $phpcsFile->findExtendedClassName($t_class_pointer) == "EntityRepository";
+            $is_service_extends = $extends_class == "EntityRepository";
         }
 
         if($is_service_filename || $is_service_namespace || $is_service_class || $is_service_extends) {
