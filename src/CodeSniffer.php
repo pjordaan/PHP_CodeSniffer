@@ -14,28 +14,6 @@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
 
-spl_autoload_register(array('PHP_CodeSniffer', 'autoload'));
-
-if (class_exists('PHP_CodeSniffer_Exception', true) === false) {
-    throw new Exception('Class PHP_CodeSniffer_Exception not found');
-}
-
-if (class_exists('PHP_CodeSniffer_File', true) === false) {
-    throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_File not found');
-}
-
-if (class_exists('PHP_CodeSniffer_Tokens', true) === false) {
-    throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_Tokens not found');
-}
-
-if (class_exists('PHP_CodeSniffer_CLI', true) === false) {
-    throw new PHP_CodeSniffer_Exception('Class PHP_CodeSniffer_CLI not found');
-}
-
-if (interface_exists('PHP_CodeSniffer_Sniff', true) === false) {
-    throw new PHP_CodeSniffer_Exception('Interface PHP_CodeSniffer_Sniff not found');
-}
-
 /**
  * PHP_CodeSniffer tokenises PHP code and detects violations of a
  * defined set of coding standards.
@@ -246,46 +224,6 @@ class PHP_CodeSniffer
         $this->reporting = new PHP_CodeSniffer_Reporting();
 
     }//end __construct()
-
-
-    /**
-     * Autoload static method for loading classes and interfaces.
-     *
-     * @param string $className The name of the class or interface.
-     *
-     * @return void
-     */
-    public static function autoload($className)
-    {
-        if (substr($className, 0, 4) === 'PHP_') {
-            $newClassName = substr($className, 4);
-        } else {
-            $newClassName = $className;
-        }
-
-        $path = str_replace(array('_', '\\'), '/', $newClassName).'.php';
-
-        if (is_file(dirname(__FILE__).'/'.$path) === true) {
-            // Check standard file locations based on class name.
-            include dirname(__FILE__).'/'.$path;
-        } else if (is_file(dirname(__FILE__).'/CodeSniffer/Standards/'.$path) === true) {
-            // Check for included sniffs.
-            include dirname(__FILE__).'/CodeSniffer/Standards/'.$path;
-        } else {
-            // Check standard file locations based on the loaded rulesets.
-            foreach (self::$rulesetDirs as $rulesetDir) {
-                if (is_file(dirname($rulesetDir).'/'.$path) === true) {
-                    include_once dirname($rulesetDir).'/'.$path;
-                    return;
-                }
-            }
-
-            // Everything else.
-            @include $path;
-        }
-
-    }//end autoload()
-
 
     /**
      * Sets an array of file extensions that we will allow checking of.
@@ -1948,7 +1886,7 @@ class PHP_CodeSniffer
         $installedStandards = array();
 
         if ($standardsDir === '') {
-            $installedPaths = array(dirname(__FILE__).'/CodeSniffer/Standards');
+            $installedPaths = array(__DIR__.'/Standards');
             $configPaths    = PHP_CodeSniffer::getConfigData('installed_paths');
             if ($configPaths !== null) {
                 $installedPaths = array_merge($installedPaths, explode(',', $configPaths));
@@ -2035,7 +1973,7 @@ class PHP_CodeSniffer
      */
     public static function getInstalledStandardPath($standard)
     {
-        $installedPaths = array(dirname(__FILE__).'/src/Standards');
+        $installedPaths = array(__DIR__.'/Standards');
         $configPaths    = PHP_CodeSniffer::getConfigData('installed_paths');
         if ($configPaths !== null) {
             $installedPaths = array_merge($installedPaths, explode(',', $configPaths));
@@ -2103,7 +2041,7 @@ class PHP_CodeSniffer
     public static function setConfigData($key, $value, $temp=false)
     {
         if ($temp === false) {
-            $configFile = dirname(__FILE__).'/CodeSniffer.conf';
+            $configFile = dirname(__FILE__).'/../CodeSniffer.conf';
             if (is_file($configFile) === false
                 && strpos('@data_dir@', '@data_dir') === false
             ) {
@@ -2159,7 +2097,7 @@ class PHP_CodeSniffer
             return $GLOBALS['PHP_CODESNIFFER_CONFIG_DATA'];
         }
 
-        $configFile = dirname(__FILE__).'/CodeSniffer.conf';
+        $configFile = __DIR__.'/../CodeSniffer.conf';
         if (is_file($configFile) === false) {
             $configFile = '@data_dir@/PHP_CodeSniffer/CodeSniffer.conf';
         }

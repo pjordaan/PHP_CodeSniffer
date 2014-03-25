@@ -26,33 +26,8 @@
         "source": "https://github.com/hostnet/PHP_CodeSniffer"
     },
     "autoload": {
-        "classmap": [
-            "CodeSniffer.php",
-            "src/CLI.php",
-            "src/Exception.php",
-            "src/File.php",
-            "src/Report.php",
-            "src/Reporting.php",
-            "src/Sniff.php",
-            "src/Tokens.php",
-            "src/Reports/",
-            "src/CommentParser/",
-            "src/Tokenizers/",
-            "src/DocGenerators/",
-            "src/Standards/AbstractPatternSniff.php",
-            "src/Standards/AbstractScopeSniff.php",
-            "src/Standards/AbstractVariableSniff.php",
-            "src/Standards/IncorrectPatternException.php",
-            "src/Standards/Generic/Sniffs/",
-            "src/Standards/MySource/Sniffs/",
-            "src/Standards/PEAR/Sniffs/",
-            "src/Standards/PSR1/Sniffs/",
-            "src/Standards/PSR2/Sniffs/",
-            "src/Standards/Squiz/Sniffs/",
-            "src/Standards/Zend/Sniffs/",
-            "src/Standards/Hostnet/Sniffs/",
-            "src/Standards/Symfony2/Sniffs/"
-        ]
+        "classmap": [ "src"],
+        "files" : ["src/Tokens.php" ]
     },
     "suggest": {
         "phpunit/php-timer": "dev-master"
