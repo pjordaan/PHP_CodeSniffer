@@ -29,7 +29,7 @@ class Hostnet_Commenting_AuthorIsFormattedCorrectlyUnitTest extends AbstractSnif
      */
     public function getWarningList()
     {
-        return array(47 => 1);
+        return array();
 
     }//end getWarningList()
 

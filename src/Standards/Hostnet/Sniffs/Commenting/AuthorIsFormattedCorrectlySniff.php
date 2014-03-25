@@ -29,13 +29,7 @@ class Hostnet_Sniffs_Commenting_AuthorIsFormattedCorrectlySniff implements PHP_C
             $error .= '  "%s"';
           }
           $phpcsFile->addError($error, $stackPtr, $type, $data);
-        } else {
-          if(stristr($matches[1], 'Nico')){
-            $phpcsFile->addWarning("Let Op!! Nico is breaking something", $stackPtr);
-          }
-        }
-
-
+        } 
     }
 
   }
