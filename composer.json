@@ -62,7 +62,7 @@
         "ext-tokenizer": "*"
     },
     "bin": [
-        "scripts/phpcs"
+        "bin/phpcs"
     ],
     "replace": {
         "squizlabs/php_codesniffer" : "*"

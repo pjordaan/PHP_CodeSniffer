@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <ruleset name="Hostnet">
- <description>The Hostnet coding standard.</description>
+    <description>The Hostnet coding standard.</description>
+    <rule ref="PSR2"/>
 </ruleset>
