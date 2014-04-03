@@ -76,12 +76,9 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
             $default = $param['default'];
 
             if ($gap  === true && $default && $nullHint === false) {
-                $err = 'X';
                 $phpcsFile->addError($error, $token, 'NotAtEnd');
-            } else {
-                $err =' ';
             }
-            if (!$default) {
+            if (is_null($default)) {
                 $gap = true;
             }
         }
@@ -90,7 +87,7 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
 
     /**
      * Returns TOKEN_CODE if the passed argument has a default value or false.
-     * 
+     *
      *
      * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
      * @param int                  $argPtr    The position of the argument
@@ -113,7 +110,7 @@ class PEAR_Sniffs_Functions_ValidDefaultValueSniff implements PHP_CodeSniffer_Sn
 
     /**
      * Returns true if the passed argument has a Type Hint.
-     * 
+     *
      *
      * @param PHP_CodeSniffer_File $phpcsFile The file being scanned.
      * @param int                  $argPtr    The position of the argument

@@ -127,4 +127,7 @@ class myClass()
 
     public function myFunction(MyClass $arg1 = null, $arg2) {}
     public function myFunction($arg1, $arg2 = 0, MyClass $arg3 = null) {}
+
+    public function myFunction($a = null, $b = null, $c = null) {}
+    public function myFunction($a = null, $b = 0, $c = null) {}
 }
