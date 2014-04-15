@@ -15,10 +15,10 @@
             "role": "originial author"
         },
         {
-            "name": "Nico Schoenmaker",  "email" : "nschoenmaker@hostnet.nl", "role" : "developper"
+            "name": "Nico Schoenmaker",  "email" : "nschoenmaker@hostnet.nl", "role" : "developer"
         },
         {
-            "name": "Hidde Boomsma",  "email" : "hboomsma@hostnet.nl", "role" : "developper"
+            "name": "Hidde Boomsma",  "email" : "hboomsma@hostnet.nl", "role" : "developer"
         }
     ],
     "support": {
