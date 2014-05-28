@@ -18,6 +18,8 @@ class Hostnet_Classes_UseStatementsAlphabeticallyOrderedUnitTest extends Abstrac
                 return [];
             case 'UseStatementsAlphabeticallyOrderedUnitTest.1.inc' :
                 return array(16 => 1, 18 => 1);
+            case 'UseStatementsAlphabeticallyOrderedUnitTest.2.inc' :
+                return array(4 => 1, 11 => 1);
         }
 
     }//end getErrorList()
