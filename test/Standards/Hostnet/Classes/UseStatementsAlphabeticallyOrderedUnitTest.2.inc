@@ -8,4 +8,4 @@ use A4\/* comment */B3;
 
 use A5\B4 as Hello;
 
-use A6\B6 as Wonderful, A6\B5 as World;
+use A3\B6 as Wonderful, A3\B5 as World;
