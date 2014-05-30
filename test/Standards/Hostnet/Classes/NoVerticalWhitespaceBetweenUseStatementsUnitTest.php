@@ -17,8 +17,8 @@ class Hostnet_Classes_NoVerticalWhitespaceBetweenUseStatementsUnitTest extends A
                 return array(5 => 1, 12 => 1, 14 => 1, 18 => 1);
             case 'NoVerticalWhitespaceBetweenUseStatementsUnitTest.1.inc' :
                 return array(5 => 1, 7 => 1);
-//             case 'NoVerticalWhitespaceBetweenUseStatementsUnitTest.2.inc' :
-//                 return array(4 => 1, 11 => 2);
+            case 'NoVerticalWhitespaceBetweenUseStatementsUnitTest.2.inc' :
+                return array(5 => 1);
         }
 
 
