@@ -601,7 +601,6 @@ class PHP_CodeSniffer_Tokenizers_PHP
                 $finalTokens[$newStackPtr] = $newToken;
                 $newStackPtr++;
             }//end if
-
         }//end for
 
         return $finalTokens;
