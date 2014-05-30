@@ -288,6 +288,32 @@ class PHP_CodeSniffer_Tokenizers_PHP
             $tokenIsArray = is_array($token);
 
             /*
+                If this token is a single-line comment that contains a newline
+                character in the end, split it up into two tokens: one for the
+                comment and one for the newline character
+            */
+
+            if ($tokenIsArray === true && strpos($token[1], $eolChar) !== false && token_name($token[0]) == 'T_COMMENT') {
+                $content = $token[1];
+                if (strpos($content,'//') === 0 && substr($content, -1, 1) === $eolChar) {
+                    $tokenLines = explode($eolChar, $token[1]);
+                    $comment = $tokenLines[0];
+                    $commentToken['content'] = $comment;
+                    $commentToken['type'] = 'T_COMMENT';
+                    $commentToken['code'] = 372;
+                    $commentToken['line'] = $token[2];
+                    $newlineToken['content'] = "\n";
+                    $newlineToken['type'] = 'T_WHITESPACE';
+                    $newlineToken['code'] = 377;
+                    $newlineToken['line'] = $token[2];
+                    $finalTokens[$newStackPtr] = $commentToken;
+                    $finalTokens[$newStackPtr + 1] = $newlineToken;
+                    $newStackPtr +=2;
+                    continue;
+                }
+            }
+
+            /*
                 If we are using \r\n newline characters, the \r and \n are sometimes
                 split over two tokens. This normally occurs after comments. We need
                 to merge these two characters together so that our line endings are
@@ -575,6 +601,7 @@ class PHP_CodeSniffer_Tokenizers_PHP
                 $finalTokens[$newStackPtr] = $newToken;
                 $newStackPtr++;
             }//end if
+
         }//end for
 
         return $finalTokens;

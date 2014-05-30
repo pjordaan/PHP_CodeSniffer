@@ -63,7 +63,10 @@ class Squiz_PHP_CommentedOutCodeUnitTest extends AbstractSniffUnitTest
                     6  => 1,
                     8  => 1,
                     15 => 1,
+                    16 => 1,
+                    17 => 1,
                     19 => 1,
+                    86 => 1,
                    );
             break;
         case 'CommentedOutCodeUnitTest.css':

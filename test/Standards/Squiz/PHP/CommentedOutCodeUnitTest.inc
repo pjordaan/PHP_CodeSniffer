@@ -79,4 +79,9 @@ function myFunction()
 /*
     [^\'"]
 */
+
+//Please mind the ugly eval below me...
+//remove this
+//one in the future
+//eval($string);
 ?>

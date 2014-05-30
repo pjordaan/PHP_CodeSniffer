@@ -1,5 +1,4 @@
 <?php
-define ("PHP_CODESNIFFER_VERBOSITY", 1);
 
 class Hostnet_Classes_UseStatementsAlphabeticallyOrderedUnitTest extends AbstractSniffUnitTest
 {
