@@ -46,6 +46,21 @@ class Generic_Sniffs_Strings_UnnecessaryStringConcatSniff implements PHP_CodeSni
      */
     public $error = true;
 
+    /**
+     * The limit that the length of a line should not exceed.
+     *
+     * @var int
+     */
+    public $lineLimit = 120;
+
+    public function __construct()
+    {
+        if (class_exists('Generic_Sniffs_Files_LineLengthSniff')) {
+            $blah = new Generic_Sniffs_Files_LineLengthSniff();
+            $this->lineLimit = $blah->lineLimit;
+        }
+
+    }
 
     /**
      * Returns an array of tokens this test wants to listen for.
@@ -110,10 +125,12 @@ class Generic_Sniffs_Strings_UnnecessaryStringConcatSniff implements PHP_CodeSni
 
                 // Also, we want to allow string concatenation in the cases where
                 // if not concatenated, the string would violate the line length limit
+                $prev_newline = $phpcsFile->findPrevious([T_WHITESPACE], $prev , null , false , "\n");
                 $len1 = strlen($tokens[$prev]['content']);
                 $len2 = strlen($tokens[$next]['content']);
-                $line_limit = 100;
-                if ($len1 + $len2 > $line_limit) {
+                $len2 -= 2; // Count the length without counting the quote characters of the string
+                $len_current_line = $len1 + $tokens[$prev]['column'];
+                if ($len_current_line + $len2 > $this->lineLimit) {
                     return;
                 }
 

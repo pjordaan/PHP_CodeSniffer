@@ -15,6 +15,11 @@ $code = "$actions = array();"."\n";
 $code = ' ?'.'>';
 $code = '<'.'?php ';
 
-$somestring = "THis is the frst part of my very long string" .
-        "this is the second part but now it should not complain because i am long";
+// the next 2 tests show cases where the strings cannot be concatenated
+// because the line length would exceed the limit if they were
+$somestring = ".10 chars^.10 chars^.10 chars^.10 chars^.10 chars^" .
+        ".10 chars^.10 chars^";
+
+                        $someotherstring = "very small string" .
+"but big space before" ;
 ?>
