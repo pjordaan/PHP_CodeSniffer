@@ -1,6 +1,6 @@
 <?php
 /**
- * Checks if the use statements are alphabetically ordered
+ * Checks if there is vertical whitespace between use statements
  *
  * @author Nikos Savvidis
  */
