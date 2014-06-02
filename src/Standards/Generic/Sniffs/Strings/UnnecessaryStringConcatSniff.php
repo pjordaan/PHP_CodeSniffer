@@ -108,6 +108,15 @@ class Generic_Sniffs_Strings_UnnecessaryStringConcatSniff implements PHP_CodeSni
                     }
                 }
 
+                // Also, we want to allow string concatenation in the cases where
+                // if not concatenated, the string would violate the line length limit
+                $len1 = strlen($tokens[$prev]['content']);
+                $len2 = strlen($tokens[$next]['content']);
+                $line_limit = 100;
+                if ($len1 + $len2 > $line_limit) {
+                    return;
+                }
+
                 $error = 'String concat is not required here; use a single string instead';
                 if ($this->error === true) {
                     $phpcsFile->addError($error, $stackPtr, 'Found');

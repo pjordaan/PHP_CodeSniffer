@@ -14,4 +14,7 @@ $code = "$actions = array();"."\n";
 // No errors for these because they are needed in some cases.
 $code = ' ?'.'>';
 $code = '<'.'?php ';
+
+$somestring = "THis is the frst part of my very long string" .
+        "this is the second part but now it should not complain because i am long";
 ?>
