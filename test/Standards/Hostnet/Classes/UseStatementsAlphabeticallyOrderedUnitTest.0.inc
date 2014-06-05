@@ -1,6 +1,6 @@
 <?php
 
-use A1\B1\C1;
+use a1\B1\C1;
 use 				A2\B1\C2;
 use                 A2\B2\C3;
 use /* comment */ A3\B1;

@@ -70,7 +70,7 @@ class Hostnet_Sniffs_Classes_UseStatementsAlphabeticallyOrderedSniff implements 
         }
         $stackPtr++;
     }
-    if (strcmp(end($this->use_statements), $current_use_stmt) > 0) {
+    if (strcasecmp(end($this->use_statements), $current_use_stmt) > 0) {
         $error = "Use statement $current_use_stmt should be ordered before " . end($this->use_statements);
         $phpcsFile->addError($error, $stackPtr, 'UnorderedUseStatement');
     }
