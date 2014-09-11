@@ -20,8 +20,6 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
     {
         $is_service_filename = preg_match('/.*Service(\.inc|\.php)$/', $phpcsFile->getFilename()) === 1;
         $is_service_namespace = false;
-        $is_service_class = false;
-        $is_service_extends = false;
         $class_found = false;
 
         $tokens = $phpcsFile->getTokens();
@@ -35,6 +33,11 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
             }
             $stackPtr++;
         }
+
+        if(!$is_service_namespace) {
+            return;
+        }
+
 
         $start = $stackPtr;
         while ($t_class_pointer = $phpcsFile->findNext([T_CLASS], $start))
