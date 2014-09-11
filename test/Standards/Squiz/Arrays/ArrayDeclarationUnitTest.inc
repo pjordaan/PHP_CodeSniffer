@@ -169,6 +169,12 @@ $array = array(
           'input_3',
          );
 
+$array = [
+    'input_one'                  => 'one',
+    'inputTwo' => 'two',
+    'input_3' => 3,
+];
+
 // Malformed
 $foo = array(1
 , 2);
@@ -187,5 +193,12 @@ $test = array(
         );
 
 $c = array('a' => 1,);
+
+// OK
+$array = [
+          'input_one' => 'one',
+          'inputTwo'  => 'two',
+          'input_3'   => 3,
+         ];
 
 ?>

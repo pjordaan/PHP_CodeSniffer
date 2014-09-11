@@ -200,4 +200,10 @@ if (TRUE) {
     $args = array('foo' => 'foo');
     $res  = 'bar';
 }
+
+$array = [
+    'key'           => 'value',
+    'long_key'      => 'value for long key',
+    'very_long_key' => 'value for very long key'
+];
 ?>

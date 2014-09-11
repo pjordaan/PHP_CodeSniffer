@@ -36,7 +36,7 @@ class Squiz_Sniffs_Arrays_ArrayDeclarationSniff implements PHP_CodeSniffer_Sniff
      */
     public function register()
     {
-        return array(T_ARRAY);
+        return array(T_ARRAY, T_OPEN_SHORT_ARRAY);
 
     }//end register()
 
@@ -54,22 +54,29 @@ class Squiz_Sniffs_Arrays_ArrayDeclarationSniff implements PHP_CodeSniffer_Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        // Array keyword should be lower case.
-        if (strtolower($tokens[$stackPtr]['content']) !== $tokens[$stackPtr]['content']) {
-            $error = 'Array keyword should be lower case; expected "array" but found "%s"';
-            $data  = array($tokens[$stackPtr]['content']);
-            $phpcsFile->addError($error, $stackPtr, 'NotLowerCase', $data);
+        if ($tokens[$stackPtr]['code'] === T_ARRAY) {
+            // Old fashoned array('key' => 'value)
+            // Array keyword should be lower case.
+            if (strtolower($tokens[$stackPtr]['content']) !== $tokens[$stackPtr]['content']) {
+                $error = 'Array keyword should be lower case; expected "array" but found "%s"';
+                $data  = array($tokens[$stackPtr]['content']);
+                $phpcsFile->addError($error, $stackPtr, 'NotLowerCase', $data);
+            }
+
+            $arrayStart   = $tokens[$stackPtr]['parenthesis_opener'];
+            $arrayEnd     = $tokens[$arrayStart]['parenthesis_closer'];
+            $keywordStart = $tokens[$stackPtr]['column'];
+
+            if ($arrayStart != ($stackPtr + 1)) {
+                $error = 'There must be no space between the Array keyword and the opening parenthesis';
+                $phpcsFile->addError($error, $stackPtr, 'SpaceAfterKeyword');
+            }
+        } else {
+            // Modern ['key' => 'value]
+            $arrayStart   = $stackPtr;
+            $arrayEnd     = $phpcsFile->findNext([T_CLOSE_SHORT_ARRAY], $arrayStart);
+            $keywordStart = $tokens[$stackPtr]['column'];
         }
-
-        $arrayStart   = $tokens[$stackPtr]['parenthesis_opener'];
-        $arrayEnd     = $tokens[$arrayStart]['parenthesis_closer'];
-        $keywordStart = $tokens[$stackPtr]['column'];
-
-        if ($arrayStart != ($stackPtr + 1)) {
-            $error = 'There must be no space between the Array keyword and the opening parenthesis';
-            $phpcsFile->addError($error, $stackPtr, 'SpaceAfterKeyword');
-        }
-
         // Check for empty arrays.
         $content = $phpcsFile->findNext(array(T_WHITESPACE), ($arrayStart + 1), ($arrayEnd + 1), true);
         if ($content === $arrayEnd) {
@@ -224,10 +231,10 @@ class Squiz_Sniffs_Arrays_ArrayDeclarationSniff implements PHP_CodeSniffer_Sniff
         $maxLength  = 0;
 
         // Find all the double arrows that reside in this scope.
-        while (($nextToken = $phpcsFile->findNext(array(T_DOUBLE_ARROW, T_COMMA, T_ARRAY), ($nextToken + 1), $arrayEnd)) !== false) {
+        while (($nextToken = $phpcsFile->findNext(array(T_DOUBLE_ARROW, T_COMMA, T_ARRAY, T_OPEN_SHORT_ARRAY), ($nextToken + 1), $arrayEnd)) !== false) {
             $currentEntry = array();
 
-            if ($tokens[$nextToken]['code'] === T_ARRAY) {
+            if ($tokens[$nextToken]['code'] === T_ARRAY || $tokens[$nextToken]['code'] === T_OPEN_SHORT_ARRAY) {
                 // Let subsequent calls of this test handle nested arrays.
                 $indices[] = array('value' => $nextToken);
                 $nextToken = $tokens[$tokens[$nextToken]['parenthesis_opener']]['parenthesis_closer'];
@@ -240,7 +247,7 @@ class Squiz_Sniffs_Arrays_ArrayDeclarationSniff implements PHP_CodeSniffer_Sniff
                     $stackPtrCount = count($tokens[$stackPtr]['nested_parenthesis']);
                 }
 
-                if (count($tokens[$nextToken]['nested_parenthesis']) > ($stackPtrCount + 1)) {
+                if (isset($tokens[$nextToken]['nested_parenthesis']) && count($tokens[$nextToken]['nested_parenthesis']) > ($stackPtrCount + 1)) {
                     // This comma is inside more parenthesis than the ARRAY keyword,
                     // then there it is actually a comma used to separate arguments
                     // in a function call.
