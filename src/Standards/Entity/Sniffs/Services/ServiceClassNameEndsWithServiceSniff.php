@@ -61,14 +61,6 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
             }
         }
 
-        if(!$is_service_filename) {
-             $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not end with 'Service'.", 0);
-        }
-
-        if(!$is_service_namespace) {
-            $phpcsFile->addError("Namespace doesn not contain 'Service'.", $namespace_line);
-        }
-
         if(!$class_found) {
             $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not contain class.", 0);
         }
