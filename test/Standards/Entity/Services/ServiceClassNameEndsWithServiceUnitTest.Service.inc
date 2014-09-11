@@ -36,3 +36,9 @@ class MyService extends EntityRepository
 
 class MyServiceTest extends \PHPUnit_Framework_TestCase {
 }
+
+class NotGood {
+}
+
+class Exception extends \Exception {
+}

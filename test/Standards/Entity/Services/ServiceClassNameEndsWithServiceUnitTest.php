@@ -16,7 +16,7 @@ class Entity_Services_ServiceClassNameEndsWithServiceUnitTest extends AbstractSn
      */
     public function getErrorList($filename = null)
     {
-        return array();
+        return array( 40 => 2);
     }//end getErrorList()
 
     /**

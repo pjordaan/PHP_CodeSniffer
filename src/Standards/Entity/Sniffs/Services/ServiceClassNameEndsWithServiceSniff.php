@@ -22,6 +22,7 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
         $is_service_namespace = false;
         $is_service_class = false;
         $is_service_extends = false;
+        $class_found = false;
 
         $tokens = $phpcsFile->getTokens();
         $namespace_line = $tokens[$stackPtr]['line'];
@@ -35,55 +36,38 @@ class Entity_Sniffs_Services_ServiceClassNameEndsWithServiceSniff implements PHP
             $stackPtr++;
         }
 
-        $t_class_pointer = false;
-        for($i = 0; $i < count($tokens); $i++) {
-            if($tokens[$i]['code'] == T_CLASS) {
-                $t_class_pointer = $i;
-                break;
+        $start = $stackPtr;
+        while ($t_class_pointer = $phpcsFile->findNext([T_CLASS], $start))
+        {
+            $start = $t_class_pointer + 1;
+            $class_found = true;
+
+            $extends_class = $phpcsFile->findExtendedClassName($t_class_pointer);
+            if($extends_class == "\PHPUnit_Framework_TestCase" || $extends_class == "\Exception") {
+                continue;
+            }
+
+            $token = $phpcsFile->findNext([T_STRING], $t_class_pointer);
+            $name  = $tokens[$token]['content'];
+
+            if(preg_match('/.*Service$/', $name) !== 1) {
+                $phpcsFile->addError("Service class '{$name}' does not end with 'Service'.", $token);
+            }
+            if(!$extends_class == "EntityRepository") {
+                $phpcsFile->addError("Service '{$name}' should extend EntityRepository.", $token);
             }
         }
 
-        $class_name_token = [];
-        if($t_class_pointer) {
-            $extends_class = $phpcsFile->findExtendedClassName($t_class_pointer); 
-            if($extends_class == "\PHPUnit_Framework_TestCase") {
-                return;
-            }
-            $class_name_token = $this->findNextTStringContent($tokens, $t_class_pointer);
-
-            $is_service_class = preg_match('/.*Service$/', $class_name_token['content']) === 1;
-            $is_service_extends = $extends_class == "EntityRepository";
+        if(!$is_service_filename) {
+             $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not end with 'Service'.", 0);
         }
 
-        if($is_service_filename || $is_service_namespace || $is_service_class || $is_service_extends) {
-            if(!$is_service_filename) {
-                $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not end with 'Service'.", 0);
-            }
-            if(!$is_service_namespace) {
-                $phpcsFile->addError("Namespace doesn not contain 'Service'.", $namespace_line);
-            }
-            if($t_class_pointer) {
-                if(!$is_service_class) {
-                    $phpcsFile->addError("Service class '{$class_name_token['content']}' does not end with 'Service'.", $tokens[$t_class_pointer]['line']);
-                }
-                if(!$is_service_extends) {
-                    $phpcsFile->addError("Service '{$class_name_token['content']}' should extend EntityRepository.", $tokens[$t_class_pointer]['line']);
-                }
-            } else {
-                $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not contain class.", 0);
-            }
-        }
-    }
-
-    private function findNextTStringContent(array $tokens, $strackPrt)
-    {
-        while($strackPrt < count($tokens)) {
-            if($tokens[$strackPrt]['code'] == T_STRING) {
-                return $tokens[$strackPrt];
-            }
-            $strackPrt++;
+        if(!$is_service_namespace) {
+            $phpcsFile->addError("Namespace doesn not contain 'Service'.", $namespace_line);
         }
 
-        throw new \RuntimeException("Could not find token.");
+        if(!$class_found) {
+            $phpcsFile->addError("Filename '{$phpcsFile->getFilename()}' does not contain class.", 0);
+        }
     }
 }
