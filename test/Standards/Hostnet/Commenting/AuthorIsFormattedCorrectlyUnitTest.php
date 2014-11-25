@@ -16,7 +16,13 @@ class Hostnet_Commenting_AuthorIsFormattedCorrectlyUnitTest extends AbstractSnif
      */
     public function getErrorList($filename = null)
     {
-        return array(4 => 1, 9 => 1, 31 => 1);
+        switch($filename) {
+            case 'AuthorIsFormattedCorrectlyUnitTest.0.inc':
+                return array(4 => 1, 9 => 1, 31 => 1);
+            case 'AuthorIsFormattedCorrectlyUnitTest.1.inc':
+                return array();
+        }
+        return array();
     }//end getErrorList()
 
     /**

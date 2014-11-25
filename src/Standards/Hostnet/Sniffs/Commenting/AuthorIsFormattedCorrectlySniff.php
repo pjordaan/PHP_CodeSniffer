@@ -18,7 +18,7 @@ class Hostnet_Sniffs_Commenting_AuthorIsFormattedCorrectlySniff implements PHP_C
 
     $matches = array();
     if(preg_match('/[*]?[\s]* @author (.*)/', $content, $matches) !== 0) {
-        if(preg_match('/([\D]+[\s|-])+([<]{1}[\w]+[@]{1}[\w]+[.]{1}[\w]+[>]{1}){1}$/', $matches[1]) === 0) {
+        if(preg_match('/([\D]+[\s|-])+([<]{1}[\w\.]+[@]{1}[\w]+[.]{1}[\w]+[>]{1}){1}$/', $matches[1]) === 0) {
 
           $type        = 'CommentFound';
           $comment_msg = trim($matches[1]);
@@ -29,7 +29,7 @@ class Hostnet_Sniffs_Commenting_AuthorIsFormattedCorrectlySniff implements PHP_C
             $error .= '  "%s"';
           }
           $phpcsFile->addError($error, $stackPtr, $type, $data);
-        } 
+        }
     }
 
   }
