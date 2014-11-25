@@ -33,7 +33,7 @@ class Hostnet_Sniffs_Classes_UseStatementsAlphabeticallyOrderedSniff implements 
   {
     // only check for use statements that are before the first class declaration
     // classes can have use statements for traits, for which we are not interested in this sniff
-    $first_class_occurence = $phpcsFile->findPrevious([T_CLASS], $stackPtr);
+    $first_class_occurence = $phpcsFile->findPrevious([T_CLASS, T_TRAIT], $stackPtr);
     if ($first_class_occurence > 0 && $stackPtr > $first_class_occurence) {
         return;
     }
